@@ -1,4 +1,5 @@
-import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
+import type { ThemeConfig } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { spacing, radii, sizes, fonts, fontSizes } from "./tokens";
 
 const config: ThemeConfig = {
@@ -16,7 +17,7 @@ const theme = extendTheme({
   colors: {
     brand: {
       50: "#f0f9ff",
-      100: "#e0f2fe", 
+      100: "#e0f2fe",
       200: "#bae6fd",
       300: "#7dd3fc",
       400: "#38bdf8",
@@ -31,7 +32,7 @@ const theme = extendTheme({
       50: "#f9fafb",
       100: "#f3f4f6",
       200: "#e5e7eb",
-      300: "#d1d5db", 
+      300: "#d1d5db",
       400: "#9ca3af",
       500: "#6b7280",
       600: "#4b5563",
@@ -66,7 +67,7 @@ const theme = extendTheme({
         bg: "white",
         lineHeight: "base",
         _dark: {
-          color: "gray.100", 
+          color: "gray.100",
           bg: "gray.900",
         },
       },

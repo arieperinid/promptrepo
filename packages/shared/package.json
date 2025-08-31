@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts src/env.ts --format cjs,esm --dts",
-    "lint": "eslint src/",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -8,12 +8,23 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "import"],
   rules: {
-    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { 
+      argsIgnorePattern: "^_",
+      varsIgnorePattern: "^_",
+      caughtErrorsIgnorePattern: "^_" 
+    }],
     "@typescript-eslint/consistent-type-imports": [
       "error",
       { prefer: "type-imports", fixStyle: "separate-type-imports" },
     ],
     "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
+    "import/order": [
+      "error",
+      {
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+        alphabetize: { order: "asc" },
+      },
+    ],
   },
   ignorePatterns: [
     "**/.eslintrc.js",

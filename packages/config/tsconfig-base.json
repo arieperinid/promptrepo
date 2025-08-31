@@ -2,10 +2,17 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "es2022",
-    "lib": ["es2022"],
+    "lib": [
+      "es2022"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -14,14 +21,27 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
-      "@promptrepo/ui/*": ["../../packages/ui/src/*"],
-      "@promptrepo/shared/*": ["../../packages/shared/src/*"],
-      "@promptrepo/config/*": ["../../packages/config/*"]
+      "@promptrepo/ui/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@promptrepo/shared/*": [
+        "../../packages/shared/src/*"
+      ],
+      "@promptrepo/config/*": [
+        "../../packages/config/*"
+      ]
     }
   },
-  "include": ["src/**/*", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "dist", ".next"]
+  "include": [
+    "src/**/*",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next"
+  ]
 }

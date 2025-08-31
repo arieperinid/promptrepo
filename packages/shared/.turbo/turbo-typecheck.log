@@ -1,0 +1,4 @@
+
+> @promptrepo/shared@0.0.1 typecheck /Users/arieperini/dev/promptrepo/packages/shared
+> tsc --noEmit
+

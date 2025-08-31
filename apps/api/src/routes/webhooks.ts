@@ -36,7 +36,7 @@ webhookRoutes.post("/stripe", async (c) => {
     console.log(`✅ Stripe webhook received: ${event.type} [${event.id}]`);
 
     // TODO: Implement actual webhook processing in future iterations
-    
+
     return c.json({ received: true });
   } catch (error) {
     console.error("Webhook processing error:", error);

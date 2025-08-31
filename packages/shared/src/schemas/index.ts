@@ -12,7 +12,7 @@ export const ProfileSchema = z.object({
   updated_at: z.date(),
 });
 
-// Project Schema  
+// Project Schema
 export const ProjectSchema = z.object({
   id: z.string().uuid(),
   name: z.string().min(1).max(100),

@@ -7,5 +7,8 @@ module.exports = {
   },
   rules: {
     "no-console": "warn",
+    "no-process-exit": "error",
+    "prefer-template": "error",
+    "object-shorthand": "error",
   },
 };

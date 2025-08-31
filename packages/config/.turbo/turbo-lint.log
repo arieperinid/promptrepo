@@ -1,0 +1,5 @@
+
+> @promptrepo/config@0.0.1 lint /Users/arieperini/dev/promptrepo/packages/config
+> echo "No linting needed for config package"
+
+No linting needed for config package

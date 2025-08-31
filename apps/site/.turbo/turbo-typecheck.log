@@ -1,0 +1,4 @@
+
+> @promptrepo/site@0.0.1 typecheck /Users/arieperini/dev/promptrepo/apps/site
+> tsc --noEmit
+

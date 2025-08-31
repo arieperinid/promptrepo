@@ -29,7 +29,7 @@
 profiles (users)
 ├── id (uuid)
 ├── email
-├── name  
+├── name
 ├── role (user|admin)
 └── theme_preference
 
@@ -39,14 +39,14 @@ projects
 ├── user_id → profiles(id)
 └── is_public
 
-segments  
+segments
 ├── id (uuid)
 ├── project_id → projects(id)
 ├── name
 └── order
 
 prompts
-├── id (uuid) 
+├── id (uuid)
 ├── segment_id → segments(id)
 ├── content
 ├── variables (jsonb)
@@ -60,7 +60,7 @@ validators
 
 versions
 ├── id (uuid)
-├── prompt_id → prompts(id) 
+├── prompt_id → prompts(id)
 ├── version
 ├── content
 └── is_published
@@ -76,21 +76,25 @@ billing
 ## Data Flow
 
 ### 1. User Registration/Login
+
 ```
 Site → Supabase Auth → Profile Created → Billing Record
 ```
 
 ### 2. Project Management
+
 ```
 Dashboard → API → Database → Real-time Updates
 ```
 
 ### 3. Prompt Creation
+
 ```
 Editor → Validation → API → Database → Version History
 ```
 
-### 4. Billing Flow  
+### 4. Billing Flow
+
 ```
 Stripe Checkout → Webhook → API → Database → Plan Update
 ```
@@ -98,16 +102,19 @@ Stripe Checkout → Webhook → API → Database → Plan Update
 ## External Services
 
 ### Supabase
+
 - **Auth**: User authentication and sessions
 - **Database**: PostgreSQL with Row Level Security
 - **Storage**: File uploads (future)
 
 ### Upstash Redis
+
 - **Caching**: API response caching
 - **Rate Limiting**: Request throttling
 - **Sessions**: Temporary data storage
 
 ### Stripe
+
 - **Payments**: Subscription management
 - **Webhooks**: Payment event handling
 - **Customer Portal**: Self-service billing
@@ -115,21 +122,25 @@ Stripe Checkout → Webhook → API → Database → Plan Update
 ## Security Layers
 
 ### 1. Authentication
+
 ```
 Supabase JWT → API Middleware → Route Protection
 ```
 
-### 2. Authorization  
+### 2. Authorization
+
 ```
 User Role → Resource Access → Database RLS
 ```
 
 ### 3. Validation
+
 ```
 Client Zod → API Zod → Database Constraints
 ```
 
 ### 4. Rate Limiting
+
 ```
 Redis Counter → Request Throttling → Error Response
 ```
@@ -137,6 +148,7 @@ Redis Counter → Request Throttling → Error Response
 ## Deployment Architecture
 
 ### Vercel (Frontend)
+
 ```
 ┌─────────────┐    ┌─────────────┐
 │ Site Deploy │    │Admin Deploy │
@@ -145,6 +157,7 @@ Redis Counter → Request Throttling → Error Response
 ```
 
 ### Railway/Render (Backend)
+
 ```
 ┌─────────────┐    ┌─────────────┐
 │ API Deploy  │    │ PostgreSQL  │
@@ -160,7 +173,7 @@ apps/site
 ├── @promptrepo/shared
 └── @promptrepo/config
 
-apps/admin  
+apps/admin
 ├── @promptrepo/ui
 ├── @promptrepo/shared
 └── @promptrepo/config
@@ -185,18 +198,21 @@ packages/config
 ## Performance Considerations
 
 ### Frontend
+
 - Static generation for landing pages
 - Dynamic imports for dashboard
 - Chakra UI optimization
 - Image optimization
 
-### Backend  
+### Backend
+
 - Redis caching for frequent queries
 - Connection pooling
 - Query optimization
 - Rate limiting
 
 ### Database
+
 - Proper indexing strategy
 - Query optimization
 - Row Level Security
@@ -205,11 +221,13 @@ packages/config
 ## Monitoring & Observability
 
 ### Logs
+
 - Structured logging with timestamps
-- Error tracking and alerts  
+- Error tracking and alerts
 - Performance monitoring
 
 ### Metrics
+
 - API response times
 - Database query performance
 - User engagement tracking

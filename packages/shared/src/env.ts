@@ -24,13 +24,13 @@ const envSchema = z.object({
  */
 export function validateEnv(env: Record<string, string | undefined> = process.env) {
   const result = envSchema.safeParse(env);
-  
+
   if (!result.success) {
     console.error("❌ Invalid environment variables:");
     console.error(result.error.format());
     throw new Error("Invalid environment variables");
   }
-  
+
   return result.data;
 }
 
@@ -54,12 +54,12 @@ export type ClientEnv = z.infer<typeof clientEnvSchema>;
  */
 export function validateClientEnv(env: Record<string, string | undefined> = process.env) {
   const result = clientEnvSchema.safeParse(env);
-  
+
   if (!result.success) {
     console.error("❌ Invalid client environment variables:");
     console.error(result.error.format());
     throw new Error("Invalid client environment variables");
   }
-  
+
   return result.data;
 }

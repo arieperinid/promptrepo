@@ -182,11 +182,11 @@ function ChakraProviders({ children }) {
 }
 
 // src/components/theme-toggle.tsx
-import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { jsx as jsx2 } from "react/jsx-runtime";
 function ThemeToggle() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   const icon = useColorModeValue(/* @__PURE__ */ jsx2(MoonIcon, {}), /* @__PURE__ */ jsx2(SunIcon, {}));
   const label = useColorModeValue("Switch to dark mode", "Switch to light mode");
   return /* @__PURE__ */ jsx2(

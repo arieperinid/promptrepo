@@ -5,7 +5,7 @@ export const publicRoutes = new Hono();
 // Mock project endpoint
 publicRoutes.get("/projects/:id", async (c) => {
   const id = c.req.param("id");
-  
+
   // TODO: Replace with actual database query
   const mockProject = {
     id,

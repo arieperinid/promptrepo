@@ -1,9 +1,7 @@
 /**
  * Result type for better error handling
  */
-export type Result<T, E = Error> = 
-  | { ok: true; data: T }
-  | { ok: false; error: E };
+export type Result<T, E = Error> = { ok: true; data: T } | { ok: false; error: E };
 
 /**
  * Create a successful result
@@ -14,7 +12,7 @@ export const Ok = <T>(data: T): Result<T> => ({
 });
 
 /**
- * Create an error result  
+ * Create an error result
  */
 export const Err = <E = Error>(error: E): Result<never, E> => ({
   ok: false,

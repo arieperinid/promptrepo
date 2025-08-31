@@ -1,0 +1,4 @@
+
+> @promptrepo/ui@0.0.1 lint /Users/arieperini/dev/promptrepo/packages/ui
+> eslint "src/**/*.{js,jsx,ts,tsx}"
+

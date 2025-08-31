@@ -237,11 +237,11 @@ function ChakraProviders({ children }) {
 }
 
 // src/components/theme-toggle.tsx
-var import_react3 = require("@chakra-ui/react");
 var import_icons = require("@chakra-ui/icons");
+var import_react3 = require("@chakra-ui/react");
 var import_jsx_runtime2 = require("react/jsx-runtime");
 function ThemeToggle() {
-  const { colorMode, toggleColorMode } = (0, import_react3.useColorMode)();
+  const { toggleColorMode } = (0, import_react3.useColorMode)();
   const icon = (0, import_react3.useColorModeValue)(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_icons.MoonIcon, {}), /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_icons.SunIcon, {}));
   const label = (0, import_react3.useColorModeValue)("Switch to dark mode", "Switch to light mode");
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(

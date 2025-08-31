@@ -1,4 +1,4 @@
-// TODO: Implement RowActions component  
+// TODO: Implement RowActions component
 // This will be implemented in a future UI iteration
 
 export function RowActions() {

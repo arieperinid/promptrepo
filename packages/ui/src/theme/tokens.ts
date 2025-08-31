@@ -1,10 +1,10 @@
-import type { DeepPartial, Theme } from "@chakra-ui/react";
+// Tokens are used for theme configuration
 
 export const spacing = {
   px: "1px",
   0.5: "0.125rem",
   1: "0.25rem",
-  1.5: "0.375rem", 
+  1.5: "0.375rem",
   2: "0.5rem",
   2.5: "0.625rem",
   3: "0.75rem",
@@ -69,7 +69,7 @@ export const sizes = {
   "8xl": "90rem",
   container: {
     sm: "640px",
-    md: "768px", 
+    md: "768px",
     lg: "1024px",
     xl: "1280px",
   },
@@ -83,7 +83,7 @@ export const fonts = {
 
 export const fontSizes = {
   xs: "0.75rem",
-  sm: "0.875rem", 
+  sm: "0.875rem",
   md: "1rem",
   lg: "1.125rem",
   xl: "1.25rem",

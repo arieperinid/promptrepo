@@ -1,0 +1,4 @@
+
+> @promptrepo/ui@0.0.1 typecheck /Users/arieperini/dev/promptrepo/packages/ui
+> tsc --noEmit
+
