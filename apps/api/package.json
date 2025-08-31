@@ -1,0 +1,34 @@
+{
+  "name": "@promptrepo/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@supabase/supabase-js": "^2.38.4",
+    "@upstash/redis": "^1.25.1",
+    "hono": "^4.0.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "@promptrepo/config": "workspace:*",
+    "@promptrepo/shared": "workspace:*",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.55.0",
+    "supertest": "^6.3.3",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2",
+    "vitest": "^1.0.0"
+  }
+}
