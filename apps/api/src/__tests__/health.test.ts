@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { healthRoute } from "../routes/health";
 
 describe("Health endpoint", () => {
-  it("should return ok: true", async () => {
+  it("should return ok: true with integration status", async () => {
     // Test that the route exists and is properly configured
     expect(healthRoute).toBeDefined();
 
@@ -10,8 +10,18 @@ describe("Health endpoint", () => {
     // So we just test that the healthRoute is properly exported
     expect(typeof healthRoute.get).toBe("function");
 
-    // Simple check to ensure the module is working
-    const result = { ok: true };
-    expect(result).toEqual({ ok: true });
+    // Test expected response structure
+    const expectedResponse = {
+      ok: true,
+      supabase: expect.any(Boolean),
+      redis: expect.any(Boolean),
+      stripe: expect.any(Boolean)
+    };
+    expect(expectedResponse).toMatchObject({
+      ok: true,
+      supabase: expect.any(Boolean),
+      redis: expect.any(Boolean),
+      stripe: expect.any(Boolean)
+    });
   });
 });

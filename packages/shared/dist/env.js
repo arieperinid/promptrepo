@@ -20,7 +20,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/env.ts
 var env_exports = {};
 __export(env_exports, {
+  checkIntegrations: () => checkIntegrations,
   clientEnvSchema: () => clientEnvSchema,
+  getEnv: () => getEnv,
   validateClientEnv: () => validateClientEnv,
   validateEnv: () => validateEnv
 });
@@ -49,6 +51,19 @@ function validateEnv(env = process.env) {
   }
   return result.data;
 }
+var _env = null;
+function getEnv() {
+  if (!_env) {
+    _env = validateEnv();
+  }
+  return _env;
+}
+function checkIntegrations(env = process.env) {
+  const supabase = !!(env.NEXT_PUBLIC_SUPABASE_URL && env.NEXT_PUBLIC_SUPABASE_ANON_KEY && env.SUPABASE_SERVICE_ROLE);
+  const redis = !!(env.UPSTASH_REDIS_REST_URL && env.UPSTASH_REDIS_REST_TOKEN);
+  const stripe = !!(env.STRIPE_SECRET_KEY && env.STRIPE_WEBHOOK_SECRET);
+  return { supabase, redis, stripe };
+}
 var clientEnvSchema = envSchema.pick({
   NEXT_PUBLIC_SUPABASE_URL: true,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: true
@@ -64,7 +79,9 @@ function validateClientEnv(env = process.env) {
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  checkIntegrations,
   clientEnvSchema,
+  getEnv,
   validateClientEnv,
   validateEnv
 });

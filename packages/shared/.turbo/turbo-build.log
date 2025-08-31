@@ -1,6 +1,6 @@
 
 > @promptrepo/shared@0.0.1 build /Users/arieperini/dev/promptrepo/packages/shared
-> tsup src/index.ts src/env.ts --format cjs,esm --dts
+> tsup src/index.ts src/env.ts --format cjs,esm --dts --external @supabase/supabase-js --external @upstash/redis --external stripe
 
 [34mCLI[39m Building entry: src/env.ts, src/index.ts
 [34mCLI[39m Using tsconfig: tsconfig.json
@@ -8,15 +8,16 @@
 [34mCLI[39m Target: es2022
 [34mCJS[39m Build start
 [34mESM[39m Build start
-[32mESM[39m [1mdist/index.mjs [22m[32m3.56 KB[39m
-[32mESM[39m [1mdist/env.mjs   [22m[32m1.30 KB[39m
-[32mESM[39m ⚡️ Build success in 45ms
-[32mCJS[39m [1mdist/env.js   [22m[32m2.47 KB[39m
-[32mCJS[39m [1mdist/index.js [22m[32m5.76 KB[39m
-[32mCJS[39m ⚡️ Build success in 45ms
+[32mESM[39m [1mdist/index.mjs          [22m[32m7.43 KB[39m
+[32mESM[39m [1mdist/env.mjs            [22m[32m222.00 B[39m
+[32mESM[39m [1mdist/chunk-B5SO224Z.mjs [22m[32m1.78 KB[39m
+[32mESM[39m ⚡️ Build success in 34ms
+[32mCJS[39m [1mdist/env.js   [22m[32m3.02 KB[39m
+[32mCJS[39m [1mdist/index.js [22m[32m12.71 KB[39m
+[32mCJS[39m ⚡️ Build success in 35ms
 DTS Build start
-DTS ⚡️ Build success in 1338ms
-DTS dist/env.d.ts    2.75 KB
-DTS dist/index.d.ts  7.42 KB
-DTS dist/env.d.mts   2.75 KB
-DTS dist/index.d.mts 7.42 KB
+DTS ⚡️ Build success in 1468ms
+DTS dist/index.d.ts  11.85 KB
+DTS dist/env.d.ts    3.03 KB
+DTS dist/index.d.mts 11.85 KB
+DTS dist/env.d.mts   3.03 KB

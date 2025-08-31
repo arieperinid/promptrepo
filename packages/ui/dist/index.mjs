@@ -97,6 +97,14 @@ var fontSizes = {
   "8xl": "6rem",
   "9xl": "8rem"
 };
+var shadows = {
+  xs: "0 1px 2px rgba(0,0,0,0.05)",
+  sm: "0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)",
+  md: "0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06)",
+  lg: "0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05)",
+  outline: "0 0 0 2px rgba(14,165,233,0.5)",
+  focus: "0 0 0 2px rgba(14,165,233,0.6)"
+};
 
 // src/theme/index.ts
 var config = {
@@ -110,6 +118,7 @@ var theme = extendTheme({
   space: spacing,
   sizes,
   radii,
+  shadows,
   colors: {
     brand: {
       50: "#f0f9ff",
@@ -141,17 +150,31 @@ var theme = extendTheme({
   components: {
     Button: {
       defaultProps: {
-        colorScheme: "brand"
+        colorScheme: "brand",
+        size: "sm"
       }
     },
     Input: {
       defaultProps: {
-        focusBorderColor: "brand.500"
+        focusBorderColor: "brand.500",
+        size: "sm"
       }
     },
     Textarea: {
       defaultProps: {
-        focusBorderColor: "brand.500"
+        focusBorderColor: "brand.500",
+        size: "sm"
+      }
+    },
+    Select: {
+      defaultProps: {
+        focusBorderColor: "brand.500",
+        size: "sm"
+      }
+    },
+    IconButton: {
+      defaultProps: {
+        size: "sm"
       }
     }
   },

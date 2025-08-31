@@ -7,28 +7,17 @@
  [37m[1m [22m[39m Creating an optimized production build ...
  [32m[1m✓[22m[39m Compiled successfully
 [?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39mTypeError: (0 , i.B1) is not a function
-    at 77278 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/518.js:1:11893)
+[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39mTypeError: (0 , s.B1) is not a function
+    at 77278 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/834.js:1:13981)
     at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at 57047 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/518.js:1:10728)
+    at 69364 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/834.js:1:12816)
     at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at 73069 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:593)
+    at 73069 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:872)
     at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at n (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2638)
-    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2669
+    at r (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2917)
+    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2948
     at t.X (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:1260)
-    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2651
-TypeError: (0 , i.B1) is not a function
-    at 77278 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/518.js:1:11893)
-    at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at 65860 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/page.js:1:1525)
-    at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at 78975 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/page.js:1:575)
-    at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
-    at n (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/page.js:1:2350)
-    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/page.js:1:2381
-    at t.X (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:1260)
-    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/page.js:1:2363
+    at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2930
 [2K[1G[?25h
 [?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G[?25h> Build error occurred
 [?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G[?25hError: Failed to collect page data for /_not-found

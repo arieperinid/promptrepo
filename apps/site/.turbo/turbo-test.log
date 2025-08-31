@@ -10,14 +10,14 @@
    [90m·[39m HomePage[2m (2)[22m
      [90m·[39m should render welcome message
      [90m·[39m should render placeholder message
-[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mhome[2m.test.tsx[22m[2m (2)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mhome[2m.test.tsx[22m[2m (2)[22m
    [32m✓[39m HomePage[2m (2)[22m
      [32m✓[39m should render welcome message
      [32m✓[39m should render placeholder message
 
 [2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
 [2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
-[2m   Start at [22m 19:49:56
-[2m   Duration [22m 1.02s[2m (transform 43ms, setup 42ms, collect 322ms, tests 158ms, environment 200ms, prepare 64ms)[22m
+[2m   Start at [22m 20:09:08
+[2m   Duration [22m 889ms[2m (transform 39ms, setup 35ms, collect 326ms, tests 136ms, environment 194ms, prepare 42ms)[22m
 
 [?25h[?25h

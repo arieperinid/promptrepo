@@ -46,6 +46,15 @@ declare function validateEnv(env?: Record<string, string | undefined>): {
  * Type-safe access to validated environment variables
  */
 type Env = z.infer<typeof envSchema>;
+declare function getEnv(): Env;
+/**
+ * Check if specific integration environment variables are configured
+ */
+declare function checkIntegrations(env?: Record<string, string | undefined>): {
+    supabase: boolean;
+    redis: boolean;
+    stripe: boolean;
+};
 /**
  * Client-safe environment variables (only NEXT_PUBLIC_* vars)
  */
@@ -74,4 +83,4 @@ declare function validateClientEnv(env?: Record<string, string | undefined>): {
     NEXT_PUBLIC_SUPABASE_ANON_KEY: string;
 };
 
-export { type ClientEnv, type Env, clientEnvSchema, validateClientEnv, validateEnv };
+export { type ClientEnv, type Env, checkIntegrations, clientEnvSchema, getEnv, validateClientEnv, validateEnv };

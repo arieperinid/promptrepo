@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import Stripe from "stripe";
+import { validateWebhookSignature, getEnv } from "@promptrepo/shared";
 
 export const webhookRoutes = new Hono();
 
@@ -13,20 +13,12 @@ webhookRoutes.post("/stripe", async (c) => {
       return c.json({ error: "Missing stripe signature" }, 400);
     }
 
-    const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
-    if (!webhookSecret) {
-      console.error("STRIPE_WEBHOOK_SECRET is not configured");
-      return c.json({ error: "Webhook not configured" }, 500);
-    }
+    const env = getEnv();
 
-    // Validate signature (without processing the event yet)
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
-      apiVersion: "2023-10-16",
-    });
-
-    let event: Stripe.Event;
+    // Validate signature using shared utility
+    let event;
     try {
-      event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
+      event = validateWebhookSignature(body, signature, env.STRIPE_WEBHOOK_SECRET);
     } catch (err) {
       console.error("Webhook signature verification failed:", err);
       return c.json({ error: "Invalid signature" }, 400);
@@ -36,8 +28,14 @@ webhookRoutes.post("/stripe", async (c) => {
     console.log(`✅ Stripe webhook received: ${event.type} [${event.id}]`);
 
     // TODO: Implement actual webhook processing in future iterations
+    // Switch on event.type to handle different webhook events:
+    // - customer.subscription.created
+    // - customer.subscription.updated
+    // - customer.subscription.deleted
+    // - invoice.payment_succeeded
+    // - invoice.payment_failed
 
-    return c.json({ received: true });
+    return c.json({ received: true, eventId: event.id });
   } catch (error) {
     console.error("Webhook processing error:", error);
     return c.json({ error: "Webhook processing failed" }, 500);

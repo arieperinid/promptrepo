@@ -16,10 +16,15 @@
      [32m✓[39m should render admin heading
      [32m✓[39m should render admin badge
      [32m✓[39m should render placeholder message
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22madmin[2m.test.tsx[22m[2m (3)[22m
+   [32m✓[39m AdminPage[2m (3)[22m
+     [32m✓[39m should render admin heading
+     [32m✓[39m should render admin badge
+     [32m✓[39m should render placeholder message
 
 [2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
 [2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 19:49:56
-[2m   Duration [22m 1.05s[2m (transform 44ms, setup 40ms, collect 317ms, tests 192ms, environment 195ms, prepare 165ms)[22m
+[2m   Start at [22m 20:09:08
+[2m   Duration [22m 1.06s[2m (transform 37ms, setup 36ms, collect 319ms, tests 176ms, environment 293ms, prepare 55ms)[22m
 
 [?25h[?25h

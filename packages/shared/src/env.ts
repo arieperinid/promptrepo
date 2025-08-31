@@ -40,6 +40,30 @@ export function validateEnv(env: Record<string, string | undefined> = process.en
 export type Env = z.infer<typeof envSchema>;
 
 /**
+ * Validated environment variables object
+ * Use this for type-safe access to env vars in your apps
+ */
+let _env: Env | null = null;
+
+export function getEnv(): Env {
+  if (!_env) {
+    _env = validateEnv();
+  }
+  return _env;
+}
+
+/**
+ * Check if specific integration environment variables are configured
+ */
+export function checkIntegrations(env: Record<string, string | undefined> = process.env) {
+  const supabase = !!(env.NEXT_PUBLIC_SUPABASE_URL && env.NEXT_PUBLIC_SUPABASE_ANON_KEY && env.SUPABASE_SERVICE_ROLE);
+  const redis = !!(env.UPSTASH_REDIS_REST_URL && env.UPSTASH_REDIS_REST_TOKEN);
+  const stripe = !!(env.STRIPE_SECRET_KEY && env.STRIPE_WEBHOOK_SECRET);
+
+  return { supabase, redis, stripe };
+}
+
+/**
  * Client-safe environment variables (only NEXT_PUBLIC_* vars)
  */
 export const clientEnvSchema = envSchema.pick({

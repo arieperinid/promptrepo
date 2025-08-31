@@ -218,6 +218,15 @@ importers:
 
   packages/shared:
     dependencies:
+      '@supabase/supabase-js':
+        specifier: ^2.38.4
+        version: 2.56.1
+      '@upstash/redis':
+        specifier: ^1.25.1
+        version: 1.35.3
+      stripe:
+        specifier: ^14.9.0
+        version: 14.25.0
       zod:
         specifier: ^3.22.4
         version: 3.25.76

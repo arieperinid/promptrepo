@@ -1,4 +1,8 @@
 import { z } from 'zod';
+export { ClientEnv, Env, checkIntegrations, clientEnvSchema, getEnv, validateClientEnv, validateEnv } from './env.js';
+import { SupabaseClient } from '@supabase/supabase-js';
+import { Redis } from '@upstash/redis';
+import Stripe from 'stripe';
 
 declare const ProfileSchema: z.ZodObject<{
     id: z.ZodString;
@@ -256,4 +260,130 @@ declare function setThemePreference(theme: ThemeMode): void;
  */
 declare function getResolvedTheme(theme: ThemeMode): "light" | "dark";
 
-export { type Billing, BillingSchema, Err, Ok, type Profile, ProfileSchema, type Project, ProjectSchema, type Prompt, PromptSchema, type Result, type Segment, SegmentSchema, type ThemeMode, type Validator, ValidatorSchema, type Version, VersionSchema, getInitialTheme, getResolvedTheme, isErr, isOk, setThemePreference };
+/**
+ * Create Supabase client with anonymous key (for client-side usage)
+ * Safe to use in browsers and client components
+ */
+declare function createClientAnon(): SupabaseClient;
+/**
+ * Create Supabase client with service role key (for server-side usage)
+ * Has elevated permissions - use only on server
+ */
+declare function createClientService(): SupabaseClient;
+/**
+ * Type definitions for database tables
+ * TODO: Generate these from actual database schema
+ */
+interface Database {
+    public: {
+        Tables: {
+            profiles: {
+                Row: {
+                    id: string;
+                    email: string;
+                    name: string;
+                    role: "user" | "admin";
+                    theme_preference: "light" | "dark" | "system";
+                    created_at: string;
+                    updated_at: string;
+                };
+                Insert: Omit<Database["public"]["Tables"]["profiles"]["Row"], "id" | "created_at" | "updated_at">;
+                Update: Partial<Database["public"]["Tables"]["profiles"]["Insert"]>;
+            };
+            projects: {
+                Row: {
+                    id: string;
+                    name: string;
+                    user_id: string;
+                    is_public: boolean;
+                    created_at: string;
+                    updated_at: string;
+                };
+                Insert: Omit<Database["public"]["Tables"]["projects"]["Row"], "id" | "created_at" | "updated_at">;
+                Update: Partial<Database["public"]["Tables"]["projects"]["Insert"]>;
+            };
+        };
+    };
+}
+
+/**
+ * Get or create Upstash Redis client
+ * Uses REST API for serverless compatibility
+ */
+declare function getRedisClient(): Redis;
+/**
+ * Simple rate limiting helper
+ * TODO: Implement actual sliding window rate limiting logic
+ *
+ * @param key - Unique identifier for rate limit (e.g., user ID, IP)
+ * @param limit - Maximum number of requests allowed
+ * @param window - Time window in seconds
+ * @returns Promise<boolean> - true if request is allowed, false if rate limited
+ */
+declare function rateLimit(key: string, limit: number, window: number): Promise<boolean>;
+/**
+ * Cache helper functions
+ * TODO: Implement caching utilities
+ */
+interface CacheOptions {
+    ttl?: number;
+}
+/**
+ * Get value from cache
+ */
+declare function cacheGet<T>(key: string): Promise<T | null>;
+/**
+ * Set value in cache
+ */
+declare function cacheSet<T>(key: string, value: T, options?: CacheOptions): Promise<void>;
+/**
+ * Delete value from cache
+ */
+declare function cacheDel(key: string): Promise<void>;
+
+/**
+ * Get or create Stripe client instance
+ * Configured with API version and secret key
+ */
+declare function getStripeClient(): Stripe;
+/**
+ * Validate Stripe webhook signature
+ *
+ * @param body - Raw request body as string
+ * @param signature - Stripe signature header
+ * @param secret - Webhook secret from Stripe dashboard
+ * @returns Parsed Stripe event or throws error
+ */
+declare function validateWebhookSignature(body: string, signature: string, secret: string): Stripe.Event;
+/**
+ * Subscription management helpers
+ * TODO: Implement subscription creation, updates, cancellation
+ */
+interface SubscriptionPlan {
+    id: string;
+    name: string;
+    price: number;
+    currency: string;
+    interval: "month" | "year";
+    features: string[];
+}
+/**
+ * Create customer portal session
+ * Allows customers to manage their subscriptions
+ */
+declare function createPortalSession(customerId: string, returnUrl: string): Promise<string>;
+/**
+ * Create checkout session for subscription
+ * TODO: Implement full checkout flow
+ */
+declare function createCheckoutSession(priceId: string, customerId?: string, successUrl?: string, cancelUrl?: string): Promise<string>;
+/**
+ * Get customer by email
+ */
+declare function getCustomerByEmail(email: string): Promise<Stripe.Customer | null>;
+/**
+ * Create new customer
+ */
+declare function createCustomer(email: string, name?: string): Promise<Stripe.Customer>;
+
+export { type Billing, BillingSchema, type CacheOptions, type Database, Err, Ok, type Profile, ProfileSchema, type Project, ProjectSchema, type Prompt, PromptSchema, type Result, type Segment, SegmentSchema, type SubscriptionPlan, type ThemeMode, type Validator, ValidatorSchema, type Version, VersionSchema, cacheDel, cacheGet, cacheSet, createCheckoutSession, createClientAnon, createClientService, createCustomer, createPortalSession, getCustomerByEmail, getInitialTheme, getRedisClient, getResolvedTheme, getStripeClient, isErr, isOk, rateLimit, setThemePreference, validateWebhookSignature };
