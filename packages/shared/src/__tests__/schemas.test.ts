@@ -47,7 +47,9 @@ describe("Result helpers", () => {
   it("should create Ok result", () => {
     const result = Ok("success");
     expect(result.ok).toBe(true);
-    expect(result.data).toBe("success");
+    if (isOk(result)) {
+      expect(result.data).toBe("success");
+    }
     expect(isOk(result)).toBe(true);
     expect(isErr(result)).toBe(false);
   });
@@ -56,7 +58,9 @@ describe("Result helpers", () => {
     const error = new Error("failure");
     const result = Err(error);
     expect(result.ok).toBe(false);
-    expect(result.error).toBe(error);
+    if (isErr(result)) {
+      expect(result.error).toBe(error);
+    }
     expect(isOk(result)).toBe(false);
     expect(isErr(result)).toBe(true);
   });

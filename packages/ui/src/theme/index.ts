@@ -1,6 +1,6 @@
 import type { ThemeConfig } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
-import { spacing, radii, sizes, fonts, fontSizes } from "./tokens";
+import { spacing, radii, sizes, fonts, fontSizes, shadows } from "./tokens";
 
 const config: ThemeConfig = {
   initialColorMode: "light",
@@ -14,6 +14,7 @@ const theme = extendTheme({
   space: spacing,
   sizes,
   radii,
+  shadows,
   colors: {
     brand: {
       50: "#f0f9ff",
@@ -46,16 +47,30 @@ const theme = extendTheme({
     Button: {
       defaultProps: {
         colorScheme: "brand",
+        size: "sm",
       },
     },
     Input: {
       defaultProps: {
         focusBorderColor: "brand.500",
+        size: "sm",
       },
     },
     Textarea: {
       defaultProps: {
         focusBorderColor: "brand.500",
+        size: "sm",
+      },
+    },
+    Select: {
+      defaultProps: {
+        focusBorderColor: "brand.500",
+        size: "sm",
+      },
+    },
+    IconButton: {
+      defaultProps: {
+        size: "sm",
       },
     },
   },
