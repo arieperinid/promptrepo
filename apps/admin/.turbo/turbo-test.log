@@ -4,18 +4,23 @@
 
 [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
 
- RUN  v1.6.1 /Users/arieperini/dev/promptrepo/apps/admin
+[7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/Users/arieperini/dev/promptrepo/apps/admin[39m
 
-stderr | src/__tests__/layout.test.tsx > RootLayout > should render without crashing
+[?25l [90m·[39m [2msrc/__tests__/[22mlayout[2m.test.tsx[22m[2m (2)[22m
+ [90m·[39m [2msrc/__tests__/[22madmin[2m.test.tsx[22m[2m (3)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[G[90mstderr[2m | src/__tests__/layout.test.tsx[2m > [22m[2mRootLayout[2m > [22m[2mshould render without crashing[22m[39m
 Warning: validateDOMNesting(...): <html> cannot appear as a child of <div>.
     at html
     at RootLayout (/Users/arieperini/dev/promptrepo/apps/admin/src/app/layout.tsx:10:23)
 
- ✓ src/__tests__/layout.test.tsx  (2 tests) 150ms
- ✓ src/__tests__/admin.test.tsx  (3 tests) 287ms
+[?25l [32m✓[39m [2msrc/__tests__/[22mlayout[2m.test.tsx[22m[2m (2)[22m
+ [90m·[39m [2msrc/__tests__/[22madmin[2m.test.tsx[22m[2m (3)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mlayout[2m.test.tsx[22m[2m (2)[22m
+ [32m✓[39m [2msrc/__tests__/[22madmin[2m.test.tsx[22m[2m (3)[22m
 
- Test Files  2 passed (2)
-      Tests  5 passed (5)
-   Start at  21:22:52
-   Duration  1.48s (transform 66ms, setup 108ms, collect 910ms, tests 437ms, environment 535ms, prepare 281ms)
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m5 passed[39m[22m[90m (5)[39m
+[2m   Start at [22m 21:40:11
+[2m   Duration [22m 1.32s[2m (transform 60ms, setup 119ms, collect 825ms, tests 399ms, environment 511ms, prepare 143ms)[22m
 
+[?25h[?25h

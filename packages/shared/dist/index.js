@@ -30,13 +30,30 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
+  ApiResponseSchema: () => ApiResponseSchema,
   BillingSchema: () => BillingSchema,
+  CreateProfileSchema: () => CreateProfileSchema,
+  CreateProjectSchema: () => CreateProjectSchema,
+  CreatePromptSchema: () => CreatePromptSchema,
+  CreateSegmentSchema: () => CreateSegmentSchema,
+  CreateValidatorSchema: () => CreateValidatorSchema,
   Err: () => Err,
   Ok: () => Ok,
+  PaginatedResponseSchema: () => PaginatedResponseSchema,
+  PaginationSchema: () => PaginationSchema,
   ProfileSchema: () => ProfileSchema,
+  ProjectFiltersSchema: () => ProjectFiltersSchema,
+  ProjectHierarchySchema: () => ProjectHierarchySchema,
   ProjectSchema: () => ProjectSchema,
+  ProjectWithStatsSchema: () => ProjectWithStatsSchema,
   PromptSchema: () => PromptSchema,
+  SearchSchema: () => SearchSchema,
   SegmentSchema: () => SegmentSchema,
+  UpdateProfileSchema: () => UpdateProfileSchema,
+  UpdateProjectSchema: () => UpdateProjectSchema,
+  UpdatePromptSchema: () => UpdatePromptSchema,
+  UpdateSegmentSchema: () => UpdateSegmentSchema,
+  UpdateValidatorSchema: () => UpdateValidatorSchema,
   ValidatorSchema: () => ValidatorSchema,
   VersionSchema: () => VersionSchema,
   cacheDel: () => cacheDel,
@@ -69,20 +86,24 @@ module.exports = __toCommonJS(index_exports);
 var import_zod = require("zod");
 var ProfileSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
-  email: import_zod.z.string().email(),
-  name: import_zod.z.string().min(1).max(100),
-  avatar_url: import_zod.z.string().url().optional(),
-  role: import_zod.z.enum(["user", "admin"]).default("user"),
-  theme_preference: import_zod.z.enum(["light", "dark", "system"]).default("light"),
+  handle: import_zod.z.string().min(1).max(50),
+  // Unique username/handle
+  name: import_zod.z.string().min(1).max(100).optional(),
+  role: import_zod.z.enum(["user", "pro", "admin"]).default("user"),
+  stripe_customer_id: import_zod.z.string().optional(),
+  theme_pref: import_zod.z.enum(["light", "dark"]).default("light"),
+  // Updated field name
   created_at: import_zod.z.date(),
   updated_at: import_zod.z.date()
 });
 var ProjectSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
+  owner_id: import_zod.z.string().uuid(),
+  // Changed from user_id
   name: import_zod.z.string().min(1).max(100),
-  description: import_zod.z.string().max(500).optional(),
-  user_id: import_zod.z.string().uuid(),
-  is_public: import_zod.z.boolean().default(false),
+  description: import_zod.z.string().max(1e3).optional(),
+  visibility: import_zod.z.enum(["private", "public"]).default("private"),
+  // Changed from is_public
   created_at: import_zod.z.date(),
   updated_at: import_zod.z.date()
 });
@@ -90,53 +111,162 @@ var SegmentSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
   project_id: import_zod.z.string().uuid(),
   name: import_zod.z.string().min(1).max(100),
-  description: import_zod.z.string().max(500).optional(),
-  order: import_zod.z.number().int().min(0),
+  position: import_zod.z.number().int().min(0).default(0),
+  // Changed from order
   created_at: import_zod.z.date(),
   updated_at: import_zod.z.date()
 });
 var PromptSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
   segment_id: import_zod.z.string().uuid(),
-  content: import_zod.z.string().min(1),
-  variables: import_zod.z.record(import_zod.z.string(), import_zod.z.any()).optional(),
-  order: import_zod.z.number().int().min(0),
-  is_active: import_zod.z.boolean().default(true),
+  title: import_zod.z.string().min(1).max(200),
+  // Changed from content to title
+  body: import_zod.z.string().min(1),
+  // Main content field
+  language: import_zod.z.string().default("pt-BR"),
+  kind: import_zod.z.enum(["prompt", "system", "tool"]).default("prompt"),
+  position: import_zod.z.number().int().min(0).default(0),
+  // Changed from order
   created_at: import_zod.z.date(),
   updated_at: import_zod.z.date()
 });
 var ValidatorSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
   prompt_id: import_zod.z.string().uuid(),
-  name: import_zod.z.string().min(1).max(100),
-  type: import_zod.z.enum(["regex", "length", "contains", "custom"]),
-  config: import_zod.z.record(import_zod.z.string(), import_zod.z.any()),
-  is_active: import_zod.z.boolean().default(true),
+  title: import_zod.z.string().min(1).max(200),
+  // Changed from name
+  body: import_zod.z.string().min(1),
+  // Validation rules/description
   created_at: import_zod.z.date(),
   updated_at: import_zod.z.date()
 });
 var VersionSchema = import_zod.z.object({
   id: import_zod.z.string().uuid(),
-  prompt_id: import_zod.z.string().uuid(),
-  version: import_zod.z.string().min(1),
-  content: import_zod.z.string().min(1),
-  variables: import_zod.z.record(import_zod.z.string(), import_zod.z.any()).optional(),
-  changelog: import_zod.z.string().max(1e3).optional(),
-  is_published: import_zod.z.boolean().default(false),
-  created_at: import_zod.z.date(),
-  updated_at: import_zod.z.date()
+  entity_type: import_zod.z.enum(["project", "segment", "prompt", "validator"]),
+  entity_id: import_zod.z.string().uuid(),
+  // Changed from prompt_id to be more generic
+  snapshot: import_zod.z.record(import_zod.z.string(), import_zod.z.any()),
+  // JSON snapshot of entity
+  author_id: import_zod.z.string().uuid().optional(),
+  created_at: import_zod.z.date()
 });
 var BillingSchema = import_zod.z.object({
-  id: import_zod.z.string().uuid(),
-  user_id: import_zod.z.string().uuid(),
-  stripe_customer_id: import_zod.z.string().optional(),
-  stripe_subscription_id: import_zod.z.string().optional(),
-  plan: import_zod.z.enum(["free", "pro", "enterprise"]).default("free"),
-  status: import_zod.z.enum(["active", "inactive", "cancelled", "past_due"]).default("active"),
-  current_period_start: import_zod.z.date().optional(),
+  profile_id: import_zod.z.string().uuid(),
+  // Primary key, references profiles
+  plan: import_zod.z.enum(["free", "pro"]).default("free"),
+  // Simplified plans
   current_period_end: import_zod.z.date().optional(),
-  created_at: import_zod.z.date(),
+  status: import_zod.z.enum(["active", "past_due", "canceled", "incomplete"]).optional(),
   updated_at: import_zod.z.date()
+});
+var CreateProfileSchema = ProfileSchema.omit({
+  id: true,
+  created_at: true,
+  updated_at: true
+});
+var UpdateProfileSchema = ProfileSchema.partial().omit({
+  id: true,
+  created_at: true,
+  updated_at: true
+});
+var CreateProjectSchema = ProjectSchema.omit({
+  id: true,
+  owner_id: true,
+  // Set from auth context
+  created_at: true,
+  updated_at: true
+});
+var UpdateProjectSchema = ProjectSchema.partial().omit({
+  id: true,
+  owner_id: true,
+  created_at: true,
+  updated_at: true
+});
+var CreateSegmentSchema = SegmentSchema.omit({
+  id: true,
+  created_at: true,
+  updated_at: true
+});
+var UpdateSegmentSchema = SegmentSchema.partial().omit({
+  id: true,
+  project_id: true,
+  // Cannot change parent project
+  created_at: true,
+  updated_at: true
+});
+var CreatePromptSchema = PromptSchema.omit({
+  id: true,
+  created_at: true,
+  updated_at: true
+});
+var UpdatePromptSchema = PromptSchema.partial().omit({
+  id: true,
+  segment_id: true,
+  // Cannot change parent segment
+  created_at: true,
+  updated_at: true
+});
+var CreateValidatorSchema = ValidatorSchema.omit({
+  id: true,
+  created_at: true,
+  updated_at: true
+});
+var UpdateValidatorSchema = ValidatorSchema.partial().omit({
+  id: true,
+  prompt_id: true,
+  // Cannot change parent prompt
+  created_at: true,
+  updated_at: true
+});
+var PaginationSchema = import_zod.z.object({
+  limit: import_zod.z.coerce.number().int().min(1).max(100).default(20),
+  offset: import_zod.z.coerce.number().int().min(0).default(0)
+});
+var SearchSchema = import_zod.z.object({
+  query: import_zod.z.string().min(1).max(100),
+  ...PaginationSchema.shape
+});
+var ProjectFiltersSchema = import_zod.z.object({
+  visibility: import_zod.z.enum(["private", "public"]).optional(),
+  owner_handle: import_zod.z.string().min(1).max(50).optional(),
+  ...PaginationSchema.shape
+});
+var ApiResponseSchema = (dataSchema) => import_zod.z.object({
+  success: import_zod.z.boolean(),
+  data: dataSchema.optional(),
+  error: import_zod.z.string().optional(),
+  message: import_zod.z.string().optional()
+});
+var PaginatedResponseSchema = (itemSchema) => import_zod.z.object({
+  success: import_zod.z.boolean(),
+  data: import_zod.z.array(itemSchema),
+  pagination: import_zod.z.object({
+    total: import_zod.z.number().int().min(0),
+    limit: import_zod.z.number().int().min(1),
+    offset: import_zod.z.number().int().min(0),
+    hasMore: import_zod.z.boolean()
+  }),
+  error: import_zod.z.string().optional()
+});
+var ProjectWithStatsSchema = ProjectSchema.extend({
+  segments_count: import_zod.z.number().int().min(0),
+  prompts_count: import_zod.z.number().int().min(0),
+  validators_count: import_zod.z.number().int().min(0),
+  last_updated: import_zod.z.date(),
+  owner_handle: import_zod.z.string().optional(),
+  owner_name: import_zod.z.string().optional()
+});
+var ProjectHierarchySchema = import_zod.z.object({
+  project: ProjectSchema,
+  segments: import_zod.z.array(
+    SegmentSchema.extend({
+      prompts: import_zod.z.array(
+        PromptSchema.extend({
+          validators: import_zod.z.array(ValidatorSchema)
+        })
+      )
+    })
+  )
 });
 
 // src/types/result.ts
@@ -380,13 +510,30 @@ async function createCustomer(email, name) {
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  ApiResponseSchema,
   BillingSchema,
+  CreateProfileSchema,
+  CreateProjectSchema,
+  CreatePromptSchema,
+  CreateSegmentSchema,
+  CreateValidatorSchema,
   Err,
   Ok,
+  PaginatedResponseSchema,
+  PaginationSchema,
   ProfileSchema,
+  ProjectFiltersSchema,
+  ProjectHierarchySchema,
   ProjectSchema,
+  ProjectWithStatsSchema,
   PromptSchema,
+  SearchSchema,
   SegmentSchema,
+  UpdateProfileSchema,
+  UpdateProjectSchema,
+  UpdatePromptSchema,
+  UpdateSegmentSchema,
+  UpdateValidatorSchema,
   ValidatorSchema,
   VersionSchema,
   cacheDel,

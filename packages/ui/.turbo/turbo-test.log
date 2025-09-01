@@ -4,12 +4,22 @@
 
 [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
 
- RUN  v1.6.1 /Users/arieperini/dev/promptrepo/packages/ui
+[7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/Users/arieperini/dev/promptrepo/packages/ui[39m
 
- ✓ src/__tests__/provider.test.tsx  (3 tests) 185ms
+[?25l [90m·[39m [2msrc/__tests__/[22mprovider[2m.test.tsx[22m[2m (3)[22m
+   [90m·[39m ChakraProviders[2m (3)[22m
+     [90m·[39m should render children with Chakra theme
+     [90m·[39m should apply theme correctly
+     [90m·[39m should render without crashing
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mprovider[2m.test.tsx[22m[2m (3)[22m
+   [32m✓[39m ChakraProviders[2m (3)[22m
+     [32m✓[39m should render children with Chakra theme
+     [32m✓[39m should apply theme correctly
+     [32m✓[39m should render without crashing
 
- Test Files  1 passed (1)
-      Tests  3 passed (3)
-   Start at  21:22:50
-   Duration  1.33s (transform 58ms, setup 33ms, collect 463ms, tests 185ms, environment 338ms, prepare 154ms)
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+[2m   Start at [22m 21:40:09
+[2m   Duration [22m 1.35s[2m (transform 44ms, setup 59ms, collect 482ms, tests 166ms, environment 316ms, prepare 194ms)[22m
 
+[?25h[?25h

@@ -5,10 +5,10 @@ describe("Schemas", () => {
   it("should validate ProfileSchema correctly", () => {
     const validProfile = {
       id: "550e8400-e29b-41d4-a716-446655440000",
-      email: "test@example.com",
+      handle: "test_user",
       name: "Test User",
       role: "user" as const,
-      theme_preference: "light" as const,
+      theme_pref: "light" as const,
       created_at: new Date(),
       updated_at: new Date(),
     };
@@ -32,8 +32,8 @@ describe("Schemas", () => {
     const validProject = {
       id: "550e8400-e29b-41d4-a716-446655440000",
       name: "Test Project",
-      user_id: "550e8400-e29b-41d4-a716-446655440001",
-      is_public: false,
+      owner_id: "550e8400-e29b-41d4-a716-446655440001",
+      visibility: "private" as const,
       created_at: new Date(),
       updated_at: new Date(),
     };
