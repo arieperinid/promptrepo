@@ -104,3 +104,4 @@ promptrepo/
 - **Base Sólida**: Foco atual na infraestrutura e funcionalidades core
 - **Escalabilidade**: Arquitetura preparada para crescimento
 - **Qualidade**: Testes e linting desde o início
+- **Tipos de Domínio**: Usam snake_case para aderir ao Postgres; conversões para camelCase, se necessárias em UI, serão feitas nos apps (P1.3 UI → GPT-5)

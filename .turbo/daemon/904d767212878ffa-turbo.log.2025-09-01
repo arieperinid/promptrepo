@@ -627,3 +627,163 @@
 2025-09-01T00:52:29.361661Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-01T00:54:04.360044Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756688044267-53b9b8d97e153.mjs")}
 2025-09-01T00:54:04.360076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:14:35.835875Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums"), AnchoredSystemPathBuf("packages/shared/src/i18n"), AnchoredSystemPathBuf("packages/shared/src/mappers"), AnchoredSystemPathBuf("packages/shared/src/dtos")}
+2025-09-01T01:14:35.835899Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:41.335779Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/role.ts")}
+2025-09-01T01:14:41.335788Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:41.435481Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/role.ts")}
+2025-09-01T01:14:41.435674Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:42.935149Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/visibility.ts")}
+2025-09-01T01:14:42.935159Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:43.034809Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/visibility.ts")}
+2025-09-01T01:14:43.034816Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:44.536178Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/kind.ts")}
+2025-09-01T01:14:44.536196Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:44.736295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/kind.ts")}
+2025-09-01T01:14:44.736308Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:46.135936Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/plan.ts")}
+2025-09-01T01:14:46.135949Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:46.336029Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/plan.ts")}
+2025-09-01T01:14:46.336038Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:47.834994Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/billingStatus.ts")}
+2025-09-01T01:14:47.835006Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:48.035522Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/billingStatus.ts")}
+2025-09-01T01:14:48.035532Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:49.436030Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/themePref.ts")}
+2025-09-01T01:14:49.436039Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:49.634729Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/themePref.ts")}
+2025-09-01T01:14:49.634737Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:51.336426Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/language.ts")}
+2025-09-01T01:14:51.336436Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:14:51.536042Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/enums/language.ts")}
+2025-09-01T01:14:51.536113Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:00.235231Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/profile.ts")}
+2025-09-01T01:15:00.235244Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:00.435854Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/profile.ts")}
+2025-09-01T01:15:00.435861Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:03.335167Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/project.ts")}
+2025-09-01T01:15:03.335177Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:03.535840Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/project.ts")}
+2025-09-01T01:15:03.535849Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:05.035591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/segment.ts")}
+2025-09-01T01:15:05.035599Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:05.235857Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/segment.ts")}
+2025-09-01T01:15:05.235865Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:09.135639Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/prompt.ts")}
+2025-09-01T01:15:09.135650Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:09.239716Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/prompt.ts")}
+2025-09-01T01:15:09.239728Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:10.835515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/validator.ts")}
+2025-09-01T01:15:10.835523Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:11.035801Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/validator.ts")}
+2025-09-01T01:15:11.035809Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:15.035110Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/version.ts")}
+2025-09-01T01:15:15.035122Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:15.235925Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/version.ts")}
+2025-09-01T01:15:15.235933Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:18.534593Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/billing.ts")}
+2025-09-01T01:15:18.534603Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:18.735134Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/schemas/billing.ts")}
+2025-09-01T01:15:18.735144Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:26.135778Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/profile.dto.ts")}
+2025-09-01T01:15:26.135788Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:26.235665Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/profile.dto.ts")}
+2025-09-01T01:15:26.235673Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:27.979248Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/project.dto.ts")}
+2025-09-01T01:15:27.979264Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:28.234163Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/project.dto.ts")}
+2025-09-01T01:15:28.234173Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:29.935421Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/segment.dto.ts")}
+2025-09-01T01:15:29.935431Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:30.034757Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/segment.dto.ts")}
+2025-09-01T01:15:30.034765Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:32.234792Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/prompt.dto.ts")}
+2025-09-01T01:15:32.234801Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:32.334223Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/prompt.dto.ts")}
+2025-09-01T01:15:32.334231Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:34.035616Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/validator.dto.ts")}
+2025-09-01T01:15:34.035624Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:34.134315Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/dtos/validator.dto.ts")}
+2025-09-01T01:15:34.134328Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:51.534570Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/mappers/toDomain.ts")}
+2025-09-01T01:15:51.534580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:15:51.635171Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/mappers/toDomain.ts")}
+2025-09-01T01:15:51.635180Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:03.634936Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/mappers/toPersist.ts")}
+2025-09-01T01:16:03.634944Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:03.734108Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/mappers/toPersist.ts")}
+2025-09-01T01:16:03.734118Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:20.634035Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/result.ts")}
+2025-09-01T01:16:20.634042Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:20.734071Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/result.ts")}
+2025-09-01T01:16:20.734080Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:34.033776Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:16:34.033786Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:34.234125Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:16:34.234133Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:47.933475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/en.ts")}
+2025-09-01T01:16:47.933483Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:48.133384Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/en.ts")}
+2025-09-01T01:16:48.133393Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:56.333295Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/pt-BR.ts")}
+2025-09-01T01:16:56.333305Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:16:56.433582Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/pt-BR.ts")}
+2025-09-01T01:16:56.433590Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:17:07.033426Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/index.ts")}
+2025-09-01T01:17:07.033435Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:17:07.133080Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/i18n/index.ts")}
+2025-09-01T01:17:07.133088Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:17:21.432443Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/index.ts")}
+2025-09-01T01:17:21.432451Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:17:36.732776Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/enums.test.ts")}
+2025-09-01T01:17:36.732789Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:17:36.832476Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/enums.test.ts")}
+2025-09-01T01:17:36.832484Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:18:02.131711Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/schemas.test.ts")}
+2025-09-01T01:18:02.131719Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:18:24.334785Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/dtos.test.ts")}
+2025-09-01T01:18:24.334828Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:18:24.630920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/dtos.test.ts")}
+2025-09-01T01:18:24.630933Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:18:47.231591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/mappers.test.ts")}
+2025-09-01T01:18:47.231606Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:18:47.431575Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/mappers.test.ts")}
+2025-09-01T01:18:47.431582Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:11.531489Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/result.test.ts")}
+2025-09-01T01:19:11.531497Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:11.831005Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/result.test.ts")}
+2025-09-01T01:19:11.831017Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:30.230685Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/errors.test.ts")}
+2025-09-01T01:19:30.230697Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:30.430972Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/errors.test.ts")}
+2025-09-01T01:19:30.430982Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:48.830209Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/i18n.test.ts")}
+2025-09-01T01:19:48.830224Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:19:48.930159Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/i18n.test.ts")}
+2025-09-01T01:19:48.930169Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:22:04.427687Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".cursor/context.md")}
+2025-09-01T01:22:04.427753Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:22:27.527267Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".cursor/coding-standards.md")}
+2025-09-01T01:22:27.527274Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:22:27.727225Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".cursor/coding-standards.md")}
+2025-09-01T01:22:27.727236Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:22:45.126958Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/index.ts")}
+2025-09-01T01:22:45.126982Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:03.626349Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:03.626397Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:05.826196Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:05.826205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:07.925482Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:07.925491Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:27.425543Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:27.425569Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:29.825492Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:29.825506Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:31.926719Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/errors.ts")}
+2025-09-01T01:23:31.926729Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:23:42.224908Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T01:23:42.224933Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:24:16.324531Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/schemas.test.ts")}
+2025-09-01T01:24:16.324552Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:24:28.825616Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756689868730-3114482e27789.mjs")}
+2025-09-01T01:24:28.825626Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))

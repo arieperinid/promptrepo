@@ -6,16 +6,58 @@
 
 [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/Users/arieperini/dev/promptrepo/packages/shared[39m
 
-[90mstdout[2m | src/__tests__/redis.test.ts[2m > [22m[2mRedis utilities[2m > [22m[2mshould return true for rate limit check (mock)[22m[39m
+[?25l [32m✓[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (23)[22m
+ [90m·[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (23)[22m
+ [32m✓[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+ [90m·[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (23)[22m
+ [32m✓[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+ [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+ [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [90m·[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+ [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [90m·[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+ [90m·[39m [2msrc/__tests__/[22mmappers[2m.test.ts[22m[2m (12)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+ [32m✓[39m [2msrc/__tests__/[22mmappers[2m.test.ts[22m[2m (12)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[90mstdout[2m | src/__tests__/redis.test.ts[2m > [22m[2mRedis utilities[2m > [22m[2mshould return true for rate limit check (mock)[22m[39m
 Rate limit check: test-key, limit: 10, window: 60s
 
-[?25l [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
-[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
- [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (5)[22m
+[?25l [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+ [32m✓[39m [2msrc/__tests__/[22mmappers[2m.test.ts[22m[2m (12)[22m
+ [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (23)[22m
+ [32m✓[39m [2msrc/__tests__/[22mresult[2m.test.ts[22m[2m (25)[22m
+ [32m✓[39m [2msrc/__tests__/[22mi18n[2m.test.ts[22m[2m (24)[22m
+ [32m✓[39m [2msrc/__tests__/[22menums[2m.test.ts[22m[2m (22)[22m
+ [32m✓[39m [2msrc/__tests__/[22mdtos[2m.test.ts[22m[2m (20)[22m
+ [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (18)[22m
+ [32m✓[39m [2msrc/__tests__/[22mmappers[2m.test.ts[22m[2m (12)[22m
+ [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
 
-[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
-[2m      Tests [22m [1m[32m7 passed[39m[22m[90m (7)[39m
-[2m   Start at [22m 21:54:03
-[2m   Duration [22m 481ms[2m (transform 62ms, setup 0ms, collect 184ms, tests 4ms, environment 0ms, prepare 113ms)[22m
+[2m Test Files [22m [1m[32m8 passed[39m[22m[90m (8)[39m
+[2m      Tests [22m [1m[32m146 passed[39m[22m[90m (146)[39m
+[2m   Start at [22m 22:24:27
+[2m   Duration [22m 952ms[2m (transform 355ms, setup 0ms, collect 938ms, tests 66ms, environment 1ms, prepare 1.39s)[22m
 
 [?25h[?25h
