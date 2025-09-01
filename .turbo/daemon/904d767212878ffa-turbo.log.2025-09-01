@@ -787,3 +787,168 @@
 2025-09-01T01:24:16.324552Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
 2025-09-01T01:24:28.825616Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756689868730-3114482e27789.mjs")}
 2025-09-01T01:24:28.825626Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:31.010230Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data"), AnchoredSystemPathBuf("apps/api/src/types"), AnchoredSystemPathBuf("apps/api/src/routers")}
+2025-09-01T01:37:31.010273Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:34.110969Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/types/context.ts")}
+2025-09-01T01:37:34.110982Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:34.509643Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/types/context.ts")}
+2025-09-01T01:37:34.509656Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:37.210223Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/requestId.ts")}
+2025-09-01T01:37:37.210242Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:37.410427Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/requestId.ts")}
+2025-09-01T01:37:37.410468Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:40.910054Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/errorHandler.ts")}
+2025-09-01T01:37:40.910137Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:41.310201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/errorHandler.ts")}
+2025-09-01T01:37:41.310217Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:56.110009Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/auth.ts")}
+2025-09-01T01:37:56.110023Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:37:56.310231Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/auth.ts")}
+2025-09-01T01:37:56.310239Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:05.209803Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/rateLimit.ts")}
+2025-09-01T01:38:05.209817Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:05.509300Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/rateLimit.ts")}
+2025-09-01T01:38:05.509327Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:10.813470Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/validate.ts")}
+2025-09-01T01:38:10.813479Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:11.109890Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/validate.ts")}
+2025-09-01T01:38:11.109918Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:24.108921Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/supabase.ts")}
+2025-09-01T01:38:24.108970Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:24.413973Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/supabase.ts")}
+2025-09-01T01:38:24.414010Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:35.508972Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/public.ts")}
+2025-09-01T01:38:35.508988Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:35.708831Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/public.ts")}
+2025-09-01T01:38:35.708845Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:47.655201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/projects.ts")}
+2025-09-01T01:38:47.655217Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:48.009902Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/projects.ts")}
+2025-09-01T01:38:48.009918Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:58.708834Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/segments.ts")}
+2025-09-01T01:38:58.708847Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:38:58.908992Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/segments.ts")}
+2025-09-01T01:38:58.909002Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:05.108875Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/prompts.ts")}
+2025-09-01T01:39:05.108890Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:05.508466Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/prompts.ts")}
+2025-09-01T01:39:05.508482Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:11.008870Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/validators.ts")}
+2025-09-01T01:39:11.008899Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:11.208926Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/validators.ts")}
+2025-09-01T01:39:11.208936Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:33.608691Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:39:33.608710Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:39:34.007995Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:39:34.008009Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:03.106915Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:40:03.106962Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:03.407595Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:40:03.407610Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:23.807810Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/admin.ts")}
+2025-09-01T01:40:23.807840Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:24.308979Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/admin.ts")}
+2025-09-01T01:40:24.309052Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:40.706925Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/server.ts")}
+2025-09-01T01:40:40.706949Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:41.306781Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/server.ts")}
+2025-09-01T01:40:41.306804Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:40:45.805793Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/index.ts")}
+2025-09-01T01:40:45.805805Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:09.006250Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/public.test.ts")}
+2025-09-01T01:41:09.006403Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:09.605751Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/public.test.ts")}
+2025-09-01T01:41:09.605791Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:30.805404Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/projects.test.ts")}
+2025-09-01T01:41:30.805420Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:31.205871Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/projects.test.ts")}
+2025-09-01T01:41:31.205887Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:46.505156Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/errors.test.ts")}
+2025-09-01T01:41:46.505175Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:41:46.905344Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/errors.test.ts")}
+2025-09-01T01:41:46.905357Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:42:01.105335Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/rateLimit.test.ts")}
+2025-09-01T01:42:01.105345Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:42:01.405500Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/__tests__/rateLimit.test.ts")}
+2025-09-01T01:42:01.405510Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:43:57.503277Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/types/context.ts")}
+2025-09-01T01:43:57.503322Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:44:14.703026Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T01:44:14.703055Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:44:28.802893Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/package.json")}
+2025-09-01T01:44:28.802919Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:44:40.201587Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/data/supabase.ts")}
+2025-09-01T01:44:40.201598Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:44:44.401932Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/middleware/errorHandler.ts")}
+2025-09-01T01:44:44.401942Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:45:10.002289Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_49806_698a8805c5c2f78a1511792c49b3827f")}
+2025-09-01T01:45:10.002332Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:45:13.501919Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.894359308")}
+2025-09-01T01:45:13.501928Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:45:13.601637Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml.894359308"), AnchoredSystemPathBuf("pnpm-lock.yaml")}
+2025-09-01T01:45:13.601663Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T01:45:35.902675Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/mappers.test.ts")}
+2025-09-01T01:45:35.902696Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:45:38.801164Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/shared/src/__tests__/mappers.test.ts")}
+2025-09-01T01:45:38.801176Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/shared"), path: AnchoredSystemPathBuf("packages/shared") }}))
+2025-09-01T01:45:50.600563Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T01:45:50.600592Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:46:04.200920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756691164158-a3d07335c4dac.mjs")}
+2025-09-01T01:46:04.200939Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:50:14.395981Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/server.ts")}
+2025-09-01T01:50:14.396002Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:50:26.295440Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts")}
+2025-09-01T01:50:26.295449Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:50:35.896376Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756691435794-026164082084c.mjs")}
+2025-09-01T01:50:35.896386Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:50:35.896418Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-01T01:50:50.395055Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:50:50.395067Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:00.195083Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:51:00.195091Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:05.094948Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:51:05.094957Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:09.894109Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:51:09.894119Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:16.494874Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:51:16.494884Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:21.295022Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:51:21.295030Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:51:29.594669Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:51:29.594679Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:52:05.993940Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:52:05.993947Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:52:14.593293Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:52:14.593306Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:52:20.694281Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:52:20.694315Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:52:27.023280Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:52:27.023308Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:52:31.793169Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T01:52:31.793181Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:00.238199Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:56:00.238218Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:05.538357Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:56:05.538375Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:12.437618Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:56:12.437627Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:24.437155Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:56:24.437162Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:34.337566Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:56:34.337580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:56:42.036906Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:56:42.036915Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:58:10.035113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/public.ts")}
+2025-09-01T01:58:10.035124Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:58:16.635428Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:58:16.635437Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:58:35.234954Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:58:35.234965Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:58:47.834961Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/routers/app.ts")}
+2025-09-01T01:58:47.834970Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T01:59:35.136413Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T01:59:35.136439Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T02:00:32.332888Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.json")}
+2025-09-01T02:00:32.332900Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T02:00:38.733285Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/tsconfig.tsbuildinfo")}
+2025-09-01T02:00:38.733299Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))

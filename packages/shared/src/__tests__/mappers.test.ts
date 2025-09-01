@@ -96,13 +96,13 @@ describe("Mappers", () => {
         },
       ];
 
-      const result = mapToProfiles(rawProfiles);
-      expect(result.ok).toBe(true);
-      if (result.ok) {
-        expect(result.value).toHaveLength(2);
-        expect(result.value[0].handle).toBe("user1");
-        expect(result.value[1].handle).toBe("user2");
-      }
+          const result = mapToProfiles(rawProfiles);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.value).toHaveLength(2);
+      expect(result.value[0]?.handle).toBe("user1");
+      expect(result.value[1]?.handle).toBe("user2");
+    }
     });
 
     it("should return error if any item in array is invalid", () => {
@@ -196,7 +196,7 @@ describe("Mappers", () => {
       expect(result.visibility).toBe("public");
       expect(result.updated_at).toBe(now);
       expect(result.name).toBeUndefined(); // not in DTO
-      expect(result.owner_id).toBeUndefined(); // cannot be updated
+      expect('owner_id' in result).toBe(false); // cannot be updated
     });
 
     it("should map CreateSegmentDto to insert object", () => {

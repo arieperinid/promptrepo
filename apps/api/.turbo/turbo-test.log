@@ -6,19 +6,767 @@
 [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/Users/arieperini/dev/promptrepo/apps/api[39m
 
 [?25l [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (3)[22m
-   [32m✓[39m Health endpoint[2m (3)[22m
-     [32m✓[39m should return ok: true with integration status
-     [32m✓[39m should have correct route structure
-     [32m✓[39m should import checkIntegrations function
-[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (3)[22m
-   [32m✓[39m Health endpoint[2m (3)[22m
-     [32m✓[39m should return ok: true with integration status
-     [32m✓[39m should have correct route structure
-     [32m✓[39m should import checkIntegrations function
+[?25l[?25l[?25l[2K[1A[2K[G[90mstdout[2m | src/server.ts:94:9[22m[39m
+🚀 PromptRepo API v1 running on http://localhost:8000
 
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
-[2m   Start at [22m 22:24:28
-[2m   Duration [22m 439ms[2m (transform 42ms, setup 0ms, collect 199ms, tests 4ms, environment 0ms, prepare 56ms)[22m
+[90mstdout[2m | src/server.ts:96:9[22m[39m
+📚 Public API: http://localhost:8000/v1/public
 
-[?25h[?25h
+[90mstdout[2m | src/server.ts:98:9[22m[39m
+🔐 Authenticated API: http://localhost:8000/v1
+
+[90mstdout[2m | src/server.ts:100:9[22m[39m
+👑 Admin API: http://localhost:8000/v1/admin
+
+[90mstdout[2m | src/server.ts:94:9[22m[39m
+🚀 PromptRepo API v1 running on http://localhost:8000
+
+[90mstdout[2m | src/server.ts:96:9[22m[39m
+📚 Public API: http://localhost:8000/v1/public
+
+[90mstdout[2m | src/server.ts:98:9[22m[39m
+🔐 Authenticated API: http://localhost:8000/v1
+
+[90mstdout[2m | src/server.ts:100:9[22m[39m
+👑 Admin API: http://localhost:8000/v1/admin
+
+[90mstdout[2m | src/server.ts:94:9[22m[39m
+🚀 PromptRepo API v1 running on http://localhost:8000
+
+[90mstdout[2m | src/server.ts:96:9[22m[39m
+📚 Public API: http://localhost:8000/v1/public
+
+[90mstdout[2m | src/server.ts:98:9[22m[39m
+🔐 Authenticated API: http://localhost:8000/v1
+
+[90mstdout[2m | src/server.ts:100:9[22m[39m
+👑 Admin API: http://localhost:8000/v1/admin
+
+[90mstdout[2m | src/server.ts:94:9[22m[39m
+🚀 PromptRepo API v1 running on http://localhost:8000
+
+[90mstdout[2m | src/server.ts:96:9[22m[39m
+📚 Public API: http://localhost:8000/v1/public
+
+[90mstdout[2m | src/server.ts:98:9[22m[39m
+🔐 Authenticated API: http://localhost:8000/v1
+
+[90mstdout[2m | src/server.ts:100:9[22m[39m
+👑 Admin API: http://localhost:8000/v1/admin
+
+[?25l [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (3)[22m
+ [90m·[39m [2msrc/__tests__/[22mprojects[2m.test.ts[22m[2m (7)[22m
+ [90m·[39m [2msrc/__tests__/[22mpublic[2m.test.ts[22m[2m (7)[22m
+ [90m·[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (6)[22m
+ [90m·[39m [2msrc/__tests__/[22mrateLimit[2m.test.ts[22m[2m (6)[22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2m404 Not Found[2m > [22m[2mshould return 404 for non-existent endpoints[22m[39m
+<-- GET /non-existent-endpoint
+--> GET /non-existent-endpoint [33m404[0m 1ms
+
+[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mValidation Errors[2m > [22m[2mshould return 400 for invalid JSON[22m[39m
+<-- POST /v1/public/projects
+--> POST /v1/public/projects [31m500[0m 6ms
+
+[90mstderr[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mValidation Errors[2m > [22m[2mshould return 400 for invalid JSON[22m[39m
+Rate limit Redis error: {
+  code: [32m'UNAUTHORIZED'[39m,
+  message: [32m'Authentication required'[39m,
+  i18nKey: [32m'errors.unauthorized'[39m
+}
+API Error: {
+  requestId: [32m'd5e889d9-41e6-4640-8796-2b847ac94ad7'[39m,
+  method: [32m'POST'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m'next() called multiple times'[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mValidation Errors[2m > [22m[2mshould return 400 for invalid query parameters[22m[39m
+<-- GET /v1/public/projects?limit=invalid
+--> GET /v1/public/projects?limit=invalid [31m500[0m 3ms
+
+[90mstderr[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mValidation Errors[2m > [22m[2mshould return 400 for invalid query parameters[22m[39m
+Rate limit Redis error: {
+  code: [32m'VALIDATION_ERROR'[39m,
+  message: [32m'Invalid query parameters'[39m,
+  i18nKey: [32m'errors.validation'[39m,
+  details: { errors: [ [36m[Object][39m ] }
+}
+API Error: {
+  requestId: [32m'bf877647-27fb-45af-8961-a4d1641aac0c'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m'next() called multiple times'[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mRequest ID[2m > [22m[2mshould include request ID in response headers[22m[39m
+<-- GET /health
+--> GET /health [32m200[0m 2ms
+
+[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mCORS[2m > [22m[2mshould include CORS headers[22m[39m
+<-- OPTIONS /health
+--> OPTIONS /health [32m204[0m 0ms
+
+[90mstdout[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mDatabase Errors[2m > [22m[2mshould handle database connection errors[22m[39m
+<-- GET /v1/public/projects
+--> GET /v1/public/projects [31m500[0m 1ms
+
+[90mstderr[2m | src/__tests__/errors.test.ts[2m > [22m[2mError Handling[2m > [22m[2mDatabase Errors[2m > [22m[2mshould handle database connection errors[22m[39m
+API Error: {
+  requestId: [32m'046bf472-c5f7-4684-9396-29b0d7daf6ba'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[?25l [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (3)[22m
+ [90m·[39m [2msrc/__tests__/[22mprojects[2m.test.ts[22m[2m (7)[22m
+ [90m·[39m [2msrc/__tests__/[22mpublic[2m.test.ts[22m[2m (7)[22m
+ [33m❯[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (6)[22m
+   [33m❯[39m Error Handling[2m (6)[22m
+     [32m✓[39m 404 Not Found[2m (1)[22m
+     [33m❯[39m Validation Errors[2m (2)[22m
+       [31m×[39m should return 400 for invalid JSON
+       [31m×[39m should return 400 for invalid query parameters
+     [32m✓[39m Request ID[2m (1)[22m
+     [32m✓[39m CORS[2m (1)[22m
+     [32m✓[39m Database Errors[2m (1)[22m
+ [90m·[39m [2msrc/__tests__/[22mrateLimit[2m.test.ts[22m[2m (6)[22m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould return 200 with projects array[22m[39m
+<-- GET /v1/public/projects
+--> GET /v1/public/projects [31m500[0m 10ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould return 200 with projects array[22m[39m
+API Error: {
+  requestId: [32m'bd7f9c04-f5a1-4fbc-9e2e-ce524a0b2250'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould handle pagination parameters[22m[39m
+<-- GET /v1/public/projects?limit=10&offset=20
+--> GET /v1/public/projects?limit=10&offset=20 [31m500[0m 1ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould handle pagination parameters[22m[39m
+API Error: {
+  requestId: [32m'077fbd10-af40-4250-a1cc-be86c61d86a4'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould handle database errors[22m[39m
+<-- GET /v1/public/projects
+--> GET /v1/public/projects [31m500[0m 3ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects[2m > [22m[2mshould handle database errors[22m[39m
+API Error: {
+  requestId: [32m'e12d2df5-ceaf-497e-8c97-f8d3974ae535'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects/:id[2m > [22m[2mshould return 200 with project data[22m[39m
+<-- GET /v1/public/projects/550e8400-e29b-41d4-a716-446655440000
+--> GET /v1/public/projects/550e8400-e29b-41d4-a716-446655440000 [31m500[0m 1ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects/:id[2m > [22m[2mshould return 200 with project data[22m[39m
+API Error: {
+  requestId: [32m'5a3547aa-c331-4b0e-b11f-a0d233d603c4'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects/550e8400-e29b-41d4-a716-446655440000'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects/:id[2m > [22m[2mshould return 404 for non-existent project[22m[39m
+<-- GET /v1/public/projects/550e8400-e29b-41d4-a716-446655440000
+--> GET /v1/public/projects/550e8400-e29b-41d4-a716-446655440000 [31m500[0m 2ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects/:id[2m > [22m[2mshould return 404 for non-existent project[22m[39m
+API Error: {
+  requestId: [32m'116c75cc-1e89-4470-a68c-143672dc7a8e'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects/550e8400-e29b-41d4-a716-446655440000'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mGET /v1/public/projects/:id[2m > [22m[2mshould return 400 for invalid UUID[22m[39m
+<-- GET /v1/public/projects/invalid-uuid
+--> GET /v1/public/projects/invalid-uuid [33m400[0m 2ms
+
+[90mstdout[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mRate limiting[2m > [22m[2mshould include rate limit headers[22m[39m
+<-- GET /v1/public/projects
+--> GET /v1/public/projects [31m500[0m 2ms
+
+[90mstderr[2m | src/__tests__/public.test.ts[2m > [22m[2mPublic API[2m > [22m[2mRate limiting[2m > [22m[2mshould include rate limit headers[22m[39m
+API Error: {
+  requestId: [32m'14bfe6ef-baed-430c-a1ab-c39c06e4e9ea'[39m,
+  method: [32m'GET'[39m,
+  path: [32m'/v1/public/projects'[39m,
+  code: [32m'INTERNAL'[39m,
+  message: [32m"Cannot destructure property 'data' of '(intermediate value)' as it is undefined.: undefined"[39m,
+  i18nKey: [32m'errors.internal'[39m,
+  details: [90mundefined[39m
+}
+
+[?25l     [33m❯[39m GET /v1/public/projects/:id[2m (3)[22m
+       [31m×[39m should return 200 with project data
+       [31m×[39m should return 404 for non-existent project
+       [32m✓[39m should return 400 for invalid UUID
+     [32m✓[39m Rate limiting[2m (1)[22m
+ [33m❯[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (6)[22m
+   [33m❯[39m Error Handling[2m (6)[22m
+     [32m✓[39m 404 Not Found[2m (1)[22m
+     [33m❯[39m Validation Errors[2m (2)[22m
+       [31m×[39m should return 400 for invalid JSON
+       [31m×[39m should return 400 for invalid query parameters
+     [32m✓[39m Request ID[2m (1)[22m
+     [32m✓[39m CORS[2m (1)[22m
+     [32m✓[39m Database Errors[2m (1)[22m
+ [90m·[39m [2msrc/__tests__/[22mrateLimit[2m.test.ts[22m[2m (6)[22m
+[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mPublic endpoints[2m > [22m[2mshould allow requests within limit[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mPublic endpoints[2m > [22m[2mshould return 429 when rate limit exceeded[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mPublic endpoints[2m > [22m[2mshould set expiration on first request[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mAuthenticated endpoints[2m > [22m[2mshould use user-based rate limiting[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mAuthenticated endpoints[2m > [22m[2mshould have higher limit for authenticated users[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/rateLimit.test.ts[2m > [22m[2mRate Limiting[2m > [22m[2mRedis errors[2m > [22m[2mshould not block requests when Redis is unavailable[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[?25l     [33m❯[39m Public endpoints[2m (3)[22m
+       [31m×[39m should allow requests within limit
+         [33m⠙[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 429 when rate limit exceeded
+         [33m⠙[39m [2m[ beforeEach ][22m
+       [31m×[39m should set expiration on first request
+         [33m⠙[39m [2m[ beforeEach ][22m
+     [33m❯[39m Authenticated endpoints[2m (2)[22m
+       [31m×[39m should use user-based rate limiting
+         [33m⠙[39m [2m[ beforeEach ][22m
+       [31m×[39m should have higher limit for authenticated users
+         [33m⠙[39m [2m[ beforeEach ][22m
+     [33m❯[39m Redis errors[2m (1)[22m
+       [31m×[39m should not block requests when Redis is unavailable
+         [33m⠙[39m [2m[ beforeEach ][22m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mGET /v1/projects[2m > [22m[2mshould return 401 without token[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mGET /v1/projects[2m > [22m[2mshould return 200 with projects for authenticated user[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mPOST /v1/projects[2m > [22m[2mshould return 401 without token[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mPOST /v1/projects[2m > [22m[2mshould return 400 with invalid data[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mPOST /v1/projects[2m > [22m[2mshould create project with valid data[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mGET /v1/projects/:id[2m > [22m[2mshould return 404 for non-existent project[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[90mstderr[2m | src/__tests__/projects.test.ts[2m > [22m[2mAuthenticated Projects API[2m > [22m[2mRate limiting[2m > [22m[2mshould include rate limit headers for authenticated requests[22m[39m
+❌ Invalid environment variables:
+{
+  _errors: [],
+  NEXT_PUBLIC_SUPABASE_URL: { _errors: [ [32m'Required'[39m ] },
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: { _errors: [ [32m'Required'[39m ] },
+  SUPABASE_SERVICE_ROLE: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_URL: { _errors: [ [32m'Required'[39m ] },
+  UPSTASH_REDIS_REST_TOKEN: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_SECRET_KEY: { _errors: [ [32m'Required'[39m ] },
+  STRIPE_WEBHOOK_SECRET: { _errors: [ [32m'Required'[39m ] }
+}
+
+[?25l     [33m❯[39m Public endpoints[2m (3)[22m
+       [31m×[39m should allow requests within limit
+         [33m⠹[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 429 when rate limit exceeded
+         [33m⠹[39m [2m[ beforeEach ][22m
+       [31m×[39m should set expiration on first request
+         [33m⠹[39m [2m[ beforeEach ][22m
+     [33m❯[39m Authenticated endpoints[2m (2)[22m
+       [31m×[39m should use user-based rate limiting
+         [33m⠹[39m [2m[ beforeEach ][22m
+       [31m×[39m should have higher limit for authenticated users
+         [33m⠹[39m [2m[ beforeEach ][22m
+     [33m❯[39m Redis errors[2m (1)[22m
+       [31m×[39m should not block requests when Redis is unavailable
+         [33m⠹[39m [2m[ beforeEach ][22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G     [33m❯[39m Public endpoints[2m (3)[22m
+       [31m×[39m should allow requests within limit
+         [33m⠸[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 429 when rate limit exceeded
+         [33m⠸[39m [2m[ beforeEach ][22m
+       [31m×[39m should set expiration on first request
+         [33m⠸[39m [2m[ beforeEach ][22m
+     [33m❯[39m Authenticated endpoints[2m (2)[22m
+       [31m×[39m should use user-based rate limiting
+         [33m⠸[39m [2m[ beforeEach ][22m
+       [31m×[39m should have higher limit for authenticated users
+         [33m⠸[39m [2m[ beforeEach ][22m
+     [33m❯[39m Redis errors[2m (1)[22m
+       [31m×[39m should not block requests when Redis is unavailable
+         [33m⠸[39m [2m[ beforeEach ][22m
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G     [33m❯[39m Public endpoints[2m (3)[22m
+       [31m×[39m should allow requests within limit
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 429 when rate limit exceeded
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should set expiration on first request
+         [33m⠼[39m [2m[ beforeEach ][22m
+     [33m❯[39m Authenticated endpoints[2m (2)[22m
+       [31m×[39m should use user-based rate limiting
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should have higher limit for authenticated users
+         [33m⠼[39m [2m[ beforeEach ][22m
+     [33m❯[39m Redis errors[2m (1)[22m
+       [31m×[39m should not block requests when Redis is unavailable
+         [33m⠼[39m [2m[ beforeEach ][22m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (3)[22m
+ [33m❯[39m [2msrc/__tests__/[22mprojects[2m.test.ts[22m[2m (7)[22m
+   [33m❯[39m Authenticated Projects API[2m (7)[22m
+     [33m❯[39m GET /v1/projects[2m (2)[22m
+       [31m×[39m should return 401 without token
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 200 with projects for authenticated user
+         [33m⠼[39m [2m[ beforeEach ][22m
+     [33m❯[39m POST /v1/projects[2m (3)[22m
+       [31m×[39m should return 401 without token
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 400 with invalid data
+         [33m⠼[39m [2m[ beforeEach ][22m
+       [31m×[39m should create project with valid data
+         [33m⠼[39m [2m[ beforeEach ][22m
+     [33m❯[39m GET /v1/projects/:id[2m (1)[22m
+       [31m×[39m should return 404 for non-existent project
+         [33m⠼[39m [2m[ beforeEach ][22m
+     [33m❯[39m Rate limiting[2m (1)[22m
+       [31m×[39m should include rate limit headers for authenticated requests
+         [33m⠼[39m [2m[ beforeEach ][22m
+ [33m❯[39m [2msrc/__tests__/[22mpublic[2m.test.ts[22m[2m (7)[22m
+   [33m❯[39m Public API[2m (7)[22m
+     [33m❯[39m GET /v1/public/projects[2m (3)[22m
+       [31m×[39m should return 200 with projects array
+       [31m×[39m should handle pagination parameters
+       [32m✓[39m should handle database errors
+     [33m❯[39m GET /v1/public/projects/:id[2m (3)[22m
+       [31m×[39m should return 200 with project data
+       [31m×[39m should return 404 for non-existent project
+       [32m✓[39m should return 400 for invalid UUID
+     [32m✓[39m Rate limiting[2m (1)[22m
+ [33m❯[39m [2msrc/__tests__/[22merrors[2m.test.ts[22m[2m (6)[22m
+   [33m❯[39m Error Handling[2m (6)[22m
+     [32m✓[39m 404 Not Found[2m (1)[22m
+     [33m❯[39m Validation Errors[2m (2)[22m
+       [31m×[39m should return 400 for invalid JSON
+       [31m×[39m should return 400 for invalid query parameters
+     [32m✓[39m Request ID[2m (1)[22m
+     [32m✓[39m CORS[2m (1)[22m
+     [32m✓[39m Database Errors[2m (1)[22m
+ [33m❯[39m [2msrc/__tests__/[22mrateLimit[2m.test.ts[22m[2m (6)[22m
+   [33m❯[39m Rate Limiting[2m (6)[22m
+     [33m❯[39m Public endpoints[2m (3)[22m
+       [31m×[39m should allow requests within limit
+         [33m⠴[39m [2m[ beforeEach ][22m
+       [31m×[39m should return 429 when rate limit exceeded
+         [33m⠴[39m [2m[ beforeEach ][22m
+       [31m×[39m should set expiration on first request
+         [33m⠴[39m [2m[ beforeEach ][22m
+     [33m❯[39m Authenticated endpoints[2m (2)[22m
+       [31m×[39m should use user-based rate limiting
+         [33m⠴[39m [2m[ beforeEach ][22m
+       [31m×[39m should have higher limit for authenticated users
+         [33m⠴[39m [2m[ beforeEach ][22m
+     [33m❯[39m Redis errors[2m (1)[22m
+       [31m×[39m should not block requests when Redis is unavailable
+         [33m⠴[39m [2m[ beforeEach ][22m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 19 [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/errors.test.ts[2m > [22mError Handling[2m > [22mValidation Errors[2m > [22mshould return 400 for invalid JSON
+[31m[1mAssertionError[22m: expected 500 to be 400 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 400[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/errors.test.ts:[2m54:26[22m[39m
+    [90m 52| [39m      })[33m;[39m
+    [90m 53| [39m      
+    [90m 54| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m400[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m 55| [39m      
+    [90m 56| [39m      [35mconst[39m body [33m=[39m [35mawait[39m res[33m.[39m[34mjson[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/errors.test.ts[2m > [22mError Handling[2m > [22mValidation Errors[2m > [22mshould return 400 for invalid query parameters
+[31m[1mAssertionError[22m: expected 500 to be 400 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 400[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/errors.test.ts:[2m64:26[22m[39m
+    [90m 62| [39m      [35mconst[39m res [33m=[39m [35mawait[39m app[33m.[39m[34mrequest[39m([32m"/v1/public/projects?limit=invalid"[39m)[33m;[39m
+    [90m 63| [39m      
+    [90m 64| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m400[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m 65| [39m      
+    [90m 66| [39m      [35mconst[39m body [33m=[39m [35mawait[39m res[33m.[39m[34mjson[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mGET /v1/projects[2m > [22mshould return 401 without token
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mGET /v1/projects[2m > [22mshould return 200 with projects for authenticated user
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mPOST /v1/projects[2m > [22mshould return 401 without token
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mPOST /v1/projects[2m > [22mshould return 400 with invalid data
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mPOST /v1/projects[2m > [22mshould create project with valid data
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mGET /v1/projects/:id[2m > [22mshould return 404 for non-existent project
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/projects.test.ts[2m > [22mAuthenticated Projects API[2m > [22mRate limiting[2m > [22mshould include rate limit headers for authenticated requests
+[31m[1mError[22m: Invalid environment variables[39m
+[36m [2m❯[22m src/__tests__/projects.test.ts:[2m70:31[22m[39m
+    [90m 68| [39m    [90m// Setup default auth mocks[39m
+    [90m 69| [39m    [35mconst[39m { createClientService } [33m=[39m vi[33m.[39m[34mmocked[39m([34mrequire[39m([32m"@promptrepo/shared"[39m))[33m;[39m
+    [90m 70| [39m    [35mconst[39m mockServiceClient [33m=[39m [34mcreateClientService[39m()[33m;[39m
+    [90m   | [39m                              [31m^[39m
+    [90m 71| [39m    vi[33m.[39m[34mmocked[39m(mockServiceClient[33m.[39mauth[33m.[39mgetUser)[33m.[39m[34mmockResolvedValue[39m({
+    [90m 72| [39m      data[33m:[39m { user[33m:[39m mockUser }[33m,[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/public.test.ts[2m > [22mPublic API[2m > [22mGET /v1/public/projects[2m > [22mshould return 200 with projects array
+[31m[1mAssertionError[22m: expected 500 to be 200 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 200[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/public.test.ts:[2m54:26[22m[39m
+    [90m 52| [39m      [35mconst[39m res [33m=[39m [35mawait[39m app[33m.[39m[34mrequest[39m([32m"/v1/public/projects"[39m)[33m;[39m
+    [90m 53| [39m      
+    [90m 54| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m 55| [39m      
+    [90m 56| [39m      [35mconst[39m body [33m=[39m [35mawait[39m res[33m.[39m[34mjson[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/public.test.ts[2m > [22mPublic API[2m > [22mGET /v1/public/projects[2m > [22mshould handle pagination parameters
+[31m[1mAssertionError[22m: expected 500 to be 200 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 200[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/public.test.ts:[2m73:26[22m[39m
+    [90m 71| [39m      [35mconst[39m res [33m=[39m [35mawait[39m app[33m.[39m[34mrequest[39m([32m"/v1/public/projects?limit=10&offset=20"[39m)[33m;[39m
+    [90m 72| [39m      
+    [90m 73| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m 74| [39m      [34mexpect[39m(mockSupabase[33m.[39mrpc)[33m.[39m[34mtoHaveBeenCalledWith[39m([32m"public_list_projects"[39m[33m,[39m {
+    [90m 75| [39m        _limit[33m:[39m [34m10[39m[33m,[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/public.test.ts[2m > [22mPublic API[2m > [22mGET /v1/public/projects/:id[2m > [22mshould return 200 with project data
+[31m[1mAssertionError[22m: expected 500 to be 200 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 200[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/public.test.ts:[2m115:26[22m[39m
+    [90m113| [39m      [35mconst[39m res [33m=[39m [35mawait[39m app[33m.[39m[34mrequest[39m([32m"/v1/public/projects/550e8400-e29b-41d4-a716-446655440000"[39m)[33m;[39m
+    [90m114| [39m      
+    [90m115| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m116| [39m      
+    [90m117| [39m      [35mconst[39m body [33m=[39m [35mawait[39m res[33m.[39m[34mjson[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/public.test.ts[2m > [22mPublic API[2m > [22mGET /v1/public/projects/:id[2m > [22mshould return 404 for non-existent project
+[31m[1mAssertionError[22m: expected 500 to be 404 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 404[39m
+[31m+ 500[39m
+
+[36m [2m❯[22m src/__tests__/public.test.ts:[2m134:26[22m[39m
+    [90m132| [39m      [35mconst[39m res [33m=[39m [35mawait[39m app[33m.[39m[34mrequest[39m([32m"/v1/public/projects/550e8400-e29b-41d4-a716-446655440000"[39m)[33m;[39m
+    [90m133| [39m      
+    [90m134| [39m      [34mexpect[39m(res[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m404[39m)[33m;[39m
+    [90m   | [39m                         [31m^[39m
+    [90m135| [39m      
+    [90m136| [39m      [35mconst[39m body [33m=[39m [35mawait[39m res[33m.[39m[34mjson[39m()[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/19]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mPublic endpoints[2m > [22mshould allow requests within limit
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mPublic endpoints[2m > [22mshould return 429 when rate limit exceeded
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mPublic endpoints[2m > [22mshould set expiration on first request
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mAuthenticated endpoints[2m > [22mshould use user-based rate limiting
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mAuthenticated endpoints[2m > [22mshould have higher limit for authenticated users
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/rateLimit.test.ts[2m > [22mRate Limiting[2m > [22mRedis errors[2m > [22mshould not block requests when Redis is unavailable
+[31m[1mError[22m: Invalid environment variables[39m
+[36m [2m❯[22m src/__tests__/rateLimit.test.ts:[2m39:23[22m[39m
+    [90m 37| [39m    [35mconst[39m { getRedisClient } [33m=[39m vi[33m.[39m[34mmocked[39m([34mrequire[39m([32m"@promptrepo/shared"[39m))[33m;[39m
+    [90m 38| [39m    [35mlet[39m requestCount [33m=[39m [34m0[39m[33m;[39m
+    [90m 39| [39m    [35mconst[39m mockRedis [33m=[39m [34mgetRedisClient[39m()[33m;[39m
+    [90m   | [39m                      [31m^[39m
+    [90m 40| [39m    vi[33m.[39m[34mmocked[39m(mockRedis[33m.[39mincr)[33m.[39m[34mmockImplementation[39m(() [33m=>[39m {
+    [90m 41| [39m      requestCount[33m++[39m[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/19]⎯[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Unhandled Errors [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1m
+Vitest caught 3 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Uncaught Exception [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1mError[22m: listen EADDRINUSE: address already in use :::8000[39m
+[90m [2m❯[22m Server.setupListenHandle [as _listen2] node:net:[2m1940:16[22m[39m
+[90m [2m❯[22m listenInCluster node:net:[2m1997:12[22m[39m
+[90m [2m❯[22m Server.listen node:net:[2m2102:7[22m[39m
+[90m [2m❯[22m Module.serve ../../node_modules/.pnpm/@hono+node-server@1.19.1_hono@4.9.5/node_modules/@hono/node-server/dist/index.mjs:[2m567:10[22m[39m
+[36m [2m❯[22m src/server.ts:[2m102:1[22m[39m
+    [90m100| [39mconsole[33m.[39m[34mlog[39m([32m`👑 Admin API: http://localhost:[39m[36m${[39mport[36m}[39m[32m/v1/admin`[39m)[33m;[39m
+    [90m101| [39m
+    [90m102| [39m[34mserve[39m({
+    [90m   | [39m[31m^[39m
+    [90m103| [39m  fetch[33m:[39m app[33m.[39mfetch[33m,[39m
+    [90m104| [39m  port[33m,[39m
+[90m [2m❯[22m VitestExecutor.runModule ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m362:5[22m[39m
+[90m [2m❯[22m VitestExecutor.directRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m346:5[22m[39m
+[90m [2m❯[22m VitestExecutor.cachedRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m189:14[22m[39m
+[90m [2m❯[22m VitestExecutor.dependencyRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m233:12[22m[39m
+[90m [2m❯[22m src/__tests__/errors.test.ts:[2m15:25[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ code: 'EADDRINUSE', errno: -48, syscall: 'listen', address: '::', port: 8000 }[39m
+[31mThis error originated in "[1msrc/__tests__/errors.test.ts[22m" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Uncaught Exception [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1mError[22m: listen EADDRINUSE: address already in use :::8000[39m
+[90m [2m❯[22m Server.setupListenHandle [as _listen2] node:net:[2m1940:16[22m[39m
+[90m [2m❯[22m listenInCluster node:net:[2m1997:12[22m[39m
+[90m [2m❯[22m Server.listen node:net:[2m2102:7[22m[39m
+[90m [2m❯[22m Module.serve ../../node_modules/.pnpm/@hono+node-server@1.19.1_hono@4.9.5/node_modules/@hono/node-server/dist/index.mjs:[2m567:10[22m[39m
+[36m [2m❯[22m src/server.ts:[2m102:1[22m[39m
+    [90m100| [39mconsole[33m.[39m[34mlog[39m([32m`👑 Admin API: http://localhost:[39m[36m${[39mport[36m}[39m[32m/v1/admin`[39m)[33m;[39m
+    [90m101| [39m
+    [90m102| [39m[34mserve[39m({
+    [90m   | [39m[31m^[39m
+    [90m103| [39m  fetch[33m:[39m app[33m.[39mfetch[33m,[39m
+    [90m104| [39m  port[33m,[39m
+[90m [2m❯[22m VitestExecutor.runModule ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m362:5[22m[39m
+[90m [2m❯[22m VitestExecutor.directRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m346:5[22m[39m
+[90m [2m❯[22m VitestExecutor.cachedRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m189:14[22m[39m
+[90m [2m❯[22m VitestExecutor.dependencyRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m233:12[22m[39m
+[90m [2m❯[22m src/__tests__/public.test.ts:[2m22:25[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ code: 'EADDRINUSE', errno: -48, syscall: 'listen', address: '::', port: 8000 }[39m
+[31mThis error originated in "[1msrc/__tests__/public.test.ts[22m" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Uncaught Exception [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1mError[22m: listen EADDRINUSE: address already in use :::8000[39m
+[90m [2m❯[22m Server.setupListenHandle [as _listen2] node:net:[2m1940:16[22m[39m
+[90m [2m❯[22m listenInCluster node:net:[2m1997:12[22m[39m
+[90m [2m❯[22m Server.listen node:net:[2m2102:7[22m[39m
+[90m [2m❯[22m Module.serve ../../node_modules/.pnpm/@hono+node-server@1.19.1_hono@4.9.5/node_modules/@hono/node-server/dist/index.mjs:[2m567:10[22m[39m
+[36m [2m❯[22m src/server.ts:[2m102:1[22m[39m
+    [90m100| [39mconsole[33m.[39m[34mlog[39m([32m`👑 Admin API: http://localhost:[39m[36m${[39mport[36m}[39m[32m/v1/admin`[39m)[33m;[39m
+    [90m101| [39m
+    [90m102| [39m[34mserve[39m({
+    [90m   | [39m[31m^[39m
+    [90m103| [39m  fetch[33m:[39m app[33m.[39mfetch[33m,[39m
+    [90m104| [39m  port[33m,[39m
+[90m [2m❯[22m VitestExecutor.runModule ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m362:5[22m[39m
+[90m [2m❯[22m VitestExecutor.directRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m346:5[22m[39m
+[90m [2m❯[22m VitestExecutor.cachedRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m189:14[22m[39m
+[90m [2m❯[22m VitestExecutor.dependencyRequest ../../node_modules/.pnpm/vite-node@1.6.1_@types+node@20.19.11/node_modules/vite-node/dist/client.mjs:[2m233:12[22m[39m
+[90m [2m❯[22m src/__tests__/rateLimit.test.ts:[2m24:25[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ code: 'EADDRINUSE', errno: -48, syscall: 'listen', address: '::', port: 8000 }[39m
+[31mThis error originated in "[1msrc/__tests__/rateLimit.test.ts[22m" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.[39m
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+
+[2m Test Files [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (5)[39m
+[2m      Tests [22m [1m[31m19 failed[39m[22m[2m | [22m[1m[32m10 passed[39m[22m[90m (29)[39m
+[2m     Errors [22m [1m[31m3 errors[39m[22m
+[2m   Start at [22m 22:46:04
+[2m   Duration [22m 1.13s[2m (transform 232ms, setup 1ms, collect 2.01s, tests 476ms, environment 1ms, prepare 924ms)[22m
+
+[?25h[?25h[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
