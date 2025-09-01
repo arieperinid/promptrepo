@@ -587,3 +587,43 @@
 2025-09-01T00:42:47.229555Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
 2025-09-01T00:42:56.628920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/sql"), AnchoredSystemPathBuf("apps/api/src/sql")}
 2025-09-01T00:42:56.628928Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:48:33.061319Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-09-01T00:48:33.061359Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-01T00:48:39.062324Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-09-01T00:48:39.062334Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-01T00:48:43.563490Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests")}
+2025-09-01T00:48:43.563501Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:49:12.764939Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/10_setup_test_users.sql")}
+2025-09-01T00:49:12.764953Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:49:13.064871Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/10_setup_test_users.sql")}
+2025-09-01T00:49:13.064880Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:49:45.966082Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/11_rls_access_matrix.sql")}
+2025-09-01T00:49:45.966118Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:49:46.264560Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/11_rls_access_matrix.sql")}
+2025-09-01T00:49:46.264568Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:50:23.810365Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/12_triggers_versions.sql")}
+2025-09-01T00:50:23.810375Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:50:23.962426Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/12_triggers_versions.sql")}
+2025-09-01T00:50:23.962435Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:51:02.963306Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/13_profiles_policies.sql")}
+2025-09-01T00:51:02.963321Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:51:03.163414Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/src/sql/tests/13_profiles_policies.sql")}
+2025-09-01T00:51:03.163433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))
+2025-09-01T00:51:41.690515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tools/dbtest.ts")}
+2025-09-01T00:51:41.691034Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:51:41.869521Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tools/dbtest.ts")}
+2025-09-01T00:51:41.869536Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:51:41.962134Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tools/dbtest.ts")}
+2025-09-01T00:51:41.962145Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:52:19.560932Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".cursor/testing.md")}
+2025-09-01T00:52:19.560942Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:52:19.860957Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".cursor/testing.md")}
+2025-09-01T00:52:19.860967Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:52:24.561130Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_78605_86dac4bbd28cc213ae6ffaa99213f51e")}
+2025-09-01T00:52:24.561140Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:52:28.962298Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("")}
+2025-09-01T00:52:28.962307Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({}))
+2025-09-01T00:52:29.361642Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("pnpm-lock.yaml"), AnchoredSystemPathBuf("pnpm-lock.yaml.2355254692")}
+2025-09-01T00:52:29.361661Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-01T00:54:04.360044Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/api/vitest.config.ts.timestamp-1756688044267-53b9b8d97e153.mjs")}
+2025-09-01T00:54:04.360076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@promptrepo/api"), path: AnchoredSystemPathBuf("apps/api") }}))

@@ -10,12 +10,12 @@
 Rate limit check: test-key, limit: 10, window: 60s
 
 [?25l [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
-[?25l[?25l[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
+[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mredis[2m.test.ts[22m[2m (2)[22m
  [32m✓[39m [2msrc/__tests__/[22mschemas[2m.test.ts[22m[2m (5)[22m
 
 [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
 [2m      Tests [22m [1m[32m7 passed[39m[22m[90m (7)[39m
-[2m   Start at [22m 21:40:09
-[2m   Duration [22m 468ms[2m (transform 59ms, setup 0ms, collect 172ms, tests 5ms, environment 0ms, prepare 131ms)[22m
+[2m   Start at [22m 21:54:03
+[2m   Duration [22m 481ms[2m (transform 62ms, setup 0ms, collect 184ms, tests 4ms, environment 0ms, prepare 113ms)[22m
 
 [?25h[?25h
