@@ -4,6 +4,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "node",
+    setupFiles: ["./src/__tests__/setup.ts"],
     env: {
       NODE_ENV: "test",
       NEXT_PUBLIC_SUPABASE_URL: "http://localhost:54321",

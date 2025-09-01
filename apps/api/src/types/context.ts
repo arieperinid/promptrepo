@@ -3,19 +3,19 @@
  */
 
 export interface AuthUser {
-  id: string;
+    id: string;
 }
 
 export interface AuthContext {
-  user: AuthUser | null;
-  role: 'anonymous' | 'user' | 'pro' | 'admin';
+    user: AuthUser | null;
+    role: 'anonymous' | 'user' | 'pro' | 'admin';
 }
 
 export interface AppContext {
-  Variables: {
-    auth: AuthContext;
-    requestId: string;
-    validatedBody?: any;
-    validatedQuery?: any;
-  };
+    Variables: {
+        auth: AuthContext;
+        requestId: string;
+        validatedBody?: any;
+        validatedQuery?: any;
+    };
 }

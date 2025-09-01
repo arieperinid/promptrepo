@@ -38,13 +38,13 @@ app.use("*", prettyJSON());
 
 // CORS
 app.use(
-  "*",
-  cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://*.vercel.app"],
-    allowHeaders: ["Content-Type", "Authorization", "x-request-id"],
-    allowMethods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
-    credentials: true,
-  }),
+    "*",
+    cors({
+        origin: ["http://localhost:3000", "http://localhost:3001", "https://*.vercel.app"],
+        allowHeaders: ["Content-Type", "Authorization", "x-request-id"],
+        allowMethods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+        credentials: true,
+    }),
 );
 
 // ============================================================================
@@ -72,13 +72,13 @@ app.route("/v1/admin", adminRouter);
 
 // 404 handler
 app.notFound((c) => {
-  return c.json({
-    ok: false,
-    error: {
-      code: "NOT_FOUND",
-      message: "Endpoint not found",
-    },
-  }, 404);
+    return c.json({
+        ok: false,
+        error: {
+            code: "NOT_FOUND",
+            message: "Endpoint not found",
+        },
+    }, 404);
 });
 
 // Global error handler
@@ -90,21 +90,21 @@ app.onError(errorHandler);
 
 // Only start server if not in test environment
 if (process.env.NODE_ENV !== "test") {
-  const port = Number(process.env.PORT) || 8000;
+    const port = Number(process.env.PORT) || 8000;
 
-  // eslint-disable-next-line no-console
-  console.log(`🚀 PromptRepo API v1 running on http://localhost:${port}`);
-  // eslint-disable-next-line no-console
-  console.log(`📚 Public API: http://localhost:${port}/v1/public`);
-  // eslint-disable-next-line no-console
-  console.log(`🔐 Authenticated API: http://localhost:${port}/v1`);
-  // eslint-disable-next-line no-console
-  console.log(`👑 Admin API: http://localhost:${port}/v1/admin`);
+    // eslint-disable-next-line no-console
+    console.log(`🚀 PromptRepo API v1 running on http://localhost:${port}`);
+    // eslint-disable-next-line no-console
+    console.log(`📚 Public API: http://localhost:${port}/v1/public`);
+    // eslint-disable-next-line no-console
+    console.log(`🔐 Authenticated API: http://localhost:${port}/v1`);
+    // eslint-disable-next-line no-console
+    console.log(`👑 Admin API: http://localhost:${port}/v1/admin`);
 
-  serve({
-    fetch: app.fetch,
-    port,
-  });
+    serve({
+        fetch: app.fetch,
+        port,
+    });
 }
 
 export { app };

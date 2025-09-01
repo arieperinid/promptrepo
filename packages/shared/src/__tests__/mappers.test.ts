@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { 
-  mapToProfile, 
-  mapToProject, 
+import {
+  mapToProfile,
+  mapToProject,
   mapToSegment,
   mapToPrompt,
   mapToValidator,
@@ -96,13 +96,13 @@ describe("Mappers", () => {
         },
       ];
 
-          const result = mapToProfiles(rawProfiles);
-    expect(result.ok).toBe(true);
-    if (result.ok) {
-      expect(result.value).toHaveLength(2);
-      expect(result.value[0]?.handle).toBe("user1");
-      expect(result.value[1]?.handle).toBe("user2");
-    }
+      const result = mapToProfiles(rawProfiles);
+      expect(result.ok).toBe(true);
+      if (result.ok) {
+        expect(result.value).toHaveLength(2);
+        expect(result.value[0]?.handle).toBe("user1");
+        expect(result.value[1]?.handle).toBe("user2");
+      }
     });
 
     it("should return error if any item in array is invalid", () => {
