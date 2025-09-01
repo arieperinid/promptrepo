@@ -7,4 +7,8 @@ module.exports = {
   "*.{json,css,scss,md}": [
     "prettier --write",
   ],
+  // Run typecheck on any TypeScript file change
+  "*.{ts,tsx}": [
+    () => "pnpm -w typecheck",
+  ],
 };

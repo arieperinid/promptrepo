@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop, "feature/*"]
+  pull_request:
+    branches: [main, develop, "feature/*"]
+
+jobs:
+  ci:
+    name: CI Pipeline
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.0
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm -w lint
+
+      - name: Type check
+        run: pnpm -w typecheck
+
+      - name: Test
+        run: pnpm -w test
+
+      - name: Build
+        run: pnpm -w build
+        env:
+          # Mock environment variables for build
+          NEXT_PUBLIC_SUPABASE_URL: https://mock.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: mock-anon-key
+          SUPABASE_SERVICE_ROLE: mock-service-role
+          UPSTASH_REDIS_REST_URL: https://mock.upstash.io
+          UPSTASH_REDIS_REST_TOKEN: mock-token
+          STRIPE_SECRET_KEY: sk_test_mock
+          STRIPE_WEBHOOK_SECRET: whsec_mock
+          NODE_ENV: production
+
+  # Separate job for build artifacts (optional)
+  build-artifacts:
+    name: Build Artifacts
+    runs-on: ubuntu-latest
+    needs: ci
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build for production
+        run: pnpm -w build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://mock.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: mock-anon-key
+          SUPABASE_SERVICE_ROLE: mock-service-role
+          UPSTASH_REDIS_REST_URL: https://mock.upstash.io
+          UPSTASH_REDIS_REST_TOKEN: mock-token
+          STRIPE_SECRET_KEY: sk_test_mock
+          STRIPE_WEBHOOK_SECRET: whsec_mock
+          NODE_ENV: production
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: |
+            apps/*/dist
+            apps/*/.next
+            packages/*/dist
+          retention-days: 7

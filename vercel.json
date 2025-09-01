@@ -1,0 +1,53 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "projects": [
+    {
+      "name": "promptrepo-site",
+      "source": "apps/site",
+      "framework": "nextjs",
+      "outputDirectory": ".next",
+      "buildCommand": "cd ../.. && pnpm build --filter=@promptrepo/site",
+      "installCommand": "cd ../.. && pnpm install --frozen-lockfile",
+      "rootDirectory": "apps/site"
+    },
+    {
+      "name": "promptrepo-admin",
+      "source": "apps/admin", 
+      "framework": "nextjs",
+      "outputDirectory": ".next",
+      "buildCommand": "cd ../.. && pnpm build --filter=@promptrepo/admin",
+      "installCommand": "cd ../.. && pnpm install --frozen-lockfile",
+      "rootDirectory": "apps/admin"
+    },
+    {
+      "name": "promptrepo-api",
+      "source": "apps/api",
+      "framework": null,
+      "outputDirectory": "dist",
+      "buildCommand": "cd ../.. && pnpm build --filter=@promptrepo/api",
+      "installCommand": "cd ../.. && pnpm install --frozen-lockfile",
+      "rootDirectory": "apps/api",
+      "functions": {
+        "apps/api/src/index.ts": {
+          "runtime": "nodejs20.x"
+        }
+      }
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@next_public_supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@next_public_supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE": "@supabase_service_role",
+    "UPSTASH_REDIS_REST_URL": "@upstash_redis_rest_url",
+    "UPSTASH_REDIS_REST_TOKEN": "@upstash_redis_rest_token",
+    "STRIPE_SECRET_KEY": "@stripe_secret_key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret"
+  },
+  "github": {
+    "autoAlias": true,
+    "autoJobCancelation": true
+  }
+}

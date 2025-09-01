@@ -240,6 +240,94 @@ Escopos válidos: `admin`, `api`, `site`, `ui`, `shared`, `config`, `monorepo`
 - Turbo logs: Use `--verbose` para logs detalhados
 - App específico: Execute comandos diretamente no diretório do app
 
+## 🚀 Deploy na Vercel
+
+### Configuração Automática
+
+Este monorepo está configurado para deploy automático na Vercel:
+
+- **Preview**: Deploy automático em cada Pull Request
+- **Production**: Deploy automático no merge para `main`
+
+### Conectar Repositório na Vercel
+
+1. **Acesse** [vercel.com](https://vercel.com) e faça login
+2. **Import Project** → Conecte seu repositório GitHub
+3. **Configure cada app separadamente**:
+
+#### Site Público (`apps/site`)
+```bash
+# Configurações no painel Vercel:
+Framework Preset: Next.js
+Root Directory: apps/site
+Build Command: cd ../.. && pnpm build --filter=@promptrepo/site
+Install Command: cd ../.. && pnpm install --frozen-lockfile
+Output Directory: .next
+```
+
+#### Admin Panel (`apps/admin`)
+```bash
+# Configurações no painel Vercel:
+Framework Preset: Next.js
+Root Directory: apps/admin
+Build Command: cd ../.. && pnpm build --filter=@promptrepo/admin
+Install Command: cd ../.. && pnpm install --frozen-lockfile
+Output Directory: .next
+```
+
+#### API Backend (`apps/api`)
+```bash
+# Configurações no painel Vercel:
+Framework Preset: Other
+Root Directory: apps/api
+Build Command: cd ../.. && pnpm build --filter=@promptrepo/api
+Install Command: cd ../.. && pnpm install --frozen-lockfile
+Output Directory: dist
+```
+
+### Variáveis de Ambiente
+
+Configure as seguintes variáveis no painel da Vercel para cada projeto:
+
+```env
+# Obrigatórias para todos os apps
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Adicionais para API
+SUPABASE_SERVICE_ROLE=your_service_role_key
+UPSTASH_REDIS_REST_URL=your_redis_url
+UPSTASH_REDIS_REST_TOKEN=your_redis_token
+STRIPE_SECRET_KEY=your_stripe_secret
+STRIPE_WEBHOOK_SECRET=your_webhook_secret
+```
+
+### URLs de Deploy
+
+Após configuração, seus apps estarão disponíveis em:
+
+- **Site**: `https://promptrepo-site.vercel.app`
+- **Admin**: `https://promptrepo-admin.vercel.app`
+- **API**: `https://promptrepo-api.vercel.app`
+
+## 🔄 CI/CD Pipeline
+
+### GitHub Actions
+
+Pipeline automático configurado em `.github/workflows/ci.yml`:
+
+- **Triggers**: Push/PR para `main`, `develop`, `feature/*`
+- **Matrix**: Node.js 18 e 20
+- **Jobs**: Install → Lint → Typecheck → Test → Build
+
+### Pre-commit Hooks
+
+Configurado via Husky + lint-staged:
+
+- **ESLint**: Auto-fix de problemas de código
+- **Prettier**: Formatação automática
+- **TypeCheck**: Verificação de tipos TypeScript
+
 ## 🤝 Contribuindo
 
 1. Clone o repositório
@@ -248,7 +336,7 @@ Escopos válidos: `admin`, `api`, `site`, `ui`, `shared`, `config`, `monorepo`
 4. Faça suas alterações seguindo as convenções
 5. Commit: `git commit -m "feat: adicionar nova feature"`
 6. Push: `git push origin feature/nova-feature`
-7. Abra um Pull Request
+7. Abra um Pull Request (deploy preview será criado automaticamente)
 
 ## 📄 Licença
 
