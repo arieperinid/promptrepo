@@ -1,0 +1,5 @@
+
+> @promptrepo/admin@0.0.1 lint /Users/arieperini/dev/promptrepo/apps/admin
+> next lint
+
+✔ No ESLint warnings or errors

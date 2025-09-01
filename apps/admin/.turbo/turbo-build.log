@@ -2,12 +2,13 @@
 > @promptrepo/admin@0.0.1 build /Users/arieperini/dev/promptrepo/apps/admin
 > next build
 
-  [1m[38;2;173;127;168m▲ Next.js 14.2.32[39m[22m
+  ▲ Next.js 14.2.32
 
- [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully
-[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39mTypeError: (0 , n.B1) is not a function
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+TypeError: (0 , n.B1) is not a function
     at 77278 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/518.js:1:11893)
     at t (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:142)
     at 57047 (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/chunks/518.js:1:10728)
@@ -18,11 +19,11 @@
     at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2669
     at t.X (/Users/arieperini/dev/promptrepo/apps/admin/.next/server/webpack-runtime.js:1:1260)
     at /Users/arieperini/dev/promptrepo/apps/admin/.next/server/app/_not-found/page.js:1:2651
-[2K[1G[?25h
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G[?25h> Build error occurred
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G[?25hError: Failed to collect page data for /_not-found
-    at /Users/arieperini/dev/promptrepo/node_modules/[4m.pnpm[24m/next@14.2.32_@babel+core@7.28.3_react-dom@18.3.1_react@18.3.1/node_modules/[4mnext[24m/dist/build/utils.js:1269:15
-[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m {
-  type: [32m'Error'[39m
+
+> Build error occurred
+Error: Failed to collect page data for /_not-found
+    at /Users/arieperini/dev/promptrepo/node_modules/.pnpm/next@14.2.32_@babel+core@7.28.3_react-dom@18.3.1_react@18.3.1/node_modules/next/dist/build/utils.js:1269:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  type: 'Error'
 }
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[?25h[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+ ELIFECYCLE  Command failed with exit code 1.

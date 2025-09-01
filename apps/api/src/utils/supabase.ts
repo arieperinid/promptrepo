@@ -1,4 +1,5 @@
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 
 let supabase: SupabaseClient | null = null;
 
@@ -34,7 +35,7 @@ export function getSupabaseServerClient(): SupabaseClient {
  * TODO: Implement actual database operations
  */
 export async function queryExample() {
-  const client = getSupabaseServerClient();
+  const _client = getSupabaseServerClient();
 
   // Example query structure - not executed yet
   // const { data, error } = await client
@@ -42,6 +43,7 @@ export async function queryExample() {
   //   .select('*')
   //   .limit(10);
 
+  // eslint-disable-next-line no-console
   console.log("Supabase client ready for queries");
   return { data: [], error: null };
 }

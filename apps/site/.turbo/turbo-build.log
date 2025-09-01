@@ -2,9 +2,39 @@
 > @promptrepo/site@0.0.1 build /Users/arieperini/dev/promptrepo/apps/site
 > next build
 
-  [1m[38;2;173;127;168m▲ Next.js 14.2.32[39m[22m
+  ▲ Next.js 14.2.32
 
- [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully
-[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
-[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[?25h
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+TypeError: (0 , n.B1) is not a function
+    at 77278 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/chunks/518.js:1:11918)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at 57047 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/chunks/518.js:1:10728)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at 60596 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/app/_not-found/page.js:1:593)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at n (/Users/arieperini/dev/promptrepo/apps/site/.next/server/app/_not-found/page.js:1:2637)
+    at /Users/arieperini/dev/promptrepo/apps/site/.next/server/app/_not-found/page.js:1:2668
+    at t.X (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:1260)
+    at /Users/arieperini/dev/promptrepo/apps/site/.next/server/app/_not-found/page.js:1:2650
+TypeError: (0 , n.B1) is not a function
+    at 77278 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/chunks/518.js:1:11918)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at 25100 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/app/page.js:1:58368)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at 20256 (/Users/arieperini/dev/promptrepo/apps/site/.next/server/app/page.js:1:575)
+    at t (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:142)
+    at a (/Users/arieperini/dev/promptrepo/apps/site/.next/server/app/page.js:1:59649)
+    at /Users/arieperini/dev/promptrepo/apps/site/.next/server/app/page.js:1:59680
+    at t.X (/Users/arieperini/dev/promptrepo/apps/site/.next/server/webpack-runtime.js:1:1260)
+    at /Users/arieperini/dev/promptrepo/apps/site/.next/server/app/page.js:1:59662
+
+> Build error occurred
+Error: Failed to collect page data for /_not-found
+    at /Users/arieperini/dev/promptrepo/node_modules/.pnpm/next@14.2.32_@babel+core@7.28.3_react-dom@18.3.1_react@18.3.1/node_modules/next/dist/build/utils.js:1269:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  type: 'Error'
+}
+ ELIFECYCLE  Command failed with exit code 1.

@@ -1,5 +1,5 @@
+import { getEnv, validateWebhookSignature } from "@promptrepo/shared";
 import { Hono } from "hono";
-import { validateWebhookSignature, getEnv } from "@promptrepo/shared";
 
 export const webhookRoutes = new Hono();
 
@@ -20,11 +20,13 @@ webhookRoutes.post("/stripe", async (c) => {
     try {
       event = validateWebhookSignature(body, signature, env.STRIPE_WEBHOOK_SECRET);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Webhook signature verification failed:", err);
       return c.json({ error: "Invalid signature" }, 400);
     }
 
     // Log the event (no side-effects for now)
+    // eslint-disable-next-line no-console
     console.log(`✅ Stripe webhook received: ${event.type} [${event.id}]`);
 
     // TODO: Implement actual webhook processing in future iterations
@@ -37,6 +39,7 @@ webhookRoutes.post("/stripe", async (c) => {
 
     return c.json({ received: true, eventId: event.id });
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error("Webhook processing error:", error);
     return c.json({ error: "Webhook processing failed" }, 500);
   }

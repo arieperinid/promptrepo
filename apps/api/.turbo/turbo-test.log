@@ -3,18 +3,12 @@
 > vitest run
 
 
-[7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/Users/arieperini/dev/promptrepo/apps/api[39m
+ RUN  v1.6.1 /Users/arieperini/dev/promptrepo/apps/api
 
-[?25l [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (1)[22m
-   [32m✓[39m Health endpoint[2m (1)[22m
-     [32m✓[39m should return ok: true with integration status
-[2K[1A[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/__tests__/[22mhealth[2m.test.ts[22m[2m (1)[22m
-   [32m✓[39m Health endpoint[2m (1)[22m
-     [32m✓[39m should return ok: true with integration status
+ ✓ src/__tests__/health.test.ts  (3 tests) 2ms
 
-[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
-[2m   Start at [22m 20:09:07
-[2m   Duration [22m 424ms[2m (transform 42ms, setup 0ms, collect 140ms, tests 2ms, environment 0ms, prepare 120ms)[22m
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  21:22:51
+   Duration  308ms (transform 28ms, setup 0ms, collect 103ms, tests 2ms, environment 0ms, prepare 55ms)
 
-[?25h[?25h

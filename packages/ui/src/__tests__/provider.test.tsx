@@ -25,4 +25,14 @@ describe("ChakraProviders", () => {
     const element = screen.getByTestId("theme-test");
     expect(element).toBeDefined();
   });
+
+  it("should render without crashing", () => {
+    expect(() => {
+      render(
+        <ChakraProviders>
+          <div>No crash test</div>
+        </ChakraProviders>,
+      );
+    }).not.toThrow();
+  });
 });

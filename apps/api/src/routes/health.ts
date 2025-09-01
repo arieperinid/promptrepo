@@ -1,5 +1,5 @@
-import { Hono } from "hono";
 import { checkIntegrations } from "@promptrepo/shared";
+import { Hono } from "hono";
 
 export const healthRoute = new Hono();
 

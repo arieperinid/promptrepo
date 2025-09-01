@@ -33,12 +33,14 @@ app.notFound((c) => {
 
 // Error handler
 app.onError((err, c) => {
+  // eslint-disable-next-line no-console
   console.error("API Error:", err);
   return c.json({ error: "Internal Server Error" }, 500);
 });
 
 const port = Number(process.env.PORT) || 8000;
 
+// eslint-disable-next-line no-console
 console.log(`🚀 API server running on http://localhost:${port}`);
 
 serve({
